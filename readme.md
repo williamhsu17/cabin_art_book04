@@ -25,4 +25,4 @@
 ## 頁面紀錄
 頁面紀錄清單
 [google sheet](https://docs.google.com/spreadsheets/d/1PHfJ_SFV85IWU47ebzinCYQAzxREQXfziOu-12nvDDQ/edit?usp=sharing)
-<img width="966" alt="圖片" src="https://github.com/williamhsu17/cabin_art_book01/assets/22971294/a6eba5ec-8592-4a75-a727-e32c27d0589f">
+<img width="966" alt="圖片" src="https://github.com/williamhsu17/cabin_art_book04/assets/22971294/a6eba5ec-8592-4a75-a727-e32c27d0589f">
