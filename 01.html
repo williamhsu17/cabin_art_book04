@@ -14,7 +14,7 @@
         const thisSide = 'side_default';
 
         const backgroundColor = '#8cdcea';
-        const mainBackground = 'images/01_history/content/m_bg.jpg';
+        const mainBackground = 'images/01/introduce_05n.jpg';
         const navButtonGroupImage = 'images/01_history/top01_01.jpg';
         const navLogoImage = 'images/01_history/top01.gif';
         const navBackgroundImage = 'images/01_history/top07.jpg';
@@ -72,43 +72,45 @@
             <!-- end變更：按照頁面需求更換side -->
             <div class="main-section" style="width: 614px;">
                 <div class="section">
-                    <div class="nav-section" style="width: 614px; height: 82px; background-image: url('images/01/nav/title.jpg'); background-repeat: no-repeat;">
+                    <div class="nav-section" style="width: 614px; height: 80px; background-image: url('images/01/nav/title.jpg'); background-repeat: no-repeat;">
                         <style>
+                            .side_button_group {
+                                display: flex;
+                                padding-top: 40px;
+                                padding-top: 40px;
+                                padding-left: 260px;
+                            }
                             .image_button {
                                 display: block;
-                                width: 94px;
+                                width: 35px;
                                 height: 20px;
+                                margin-left: 10px;
+                                margin-right: 10px;
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
-                                background-image: url("images/01_history/side/01_icon01a.gif");
-                            }
-                            #link_01:hover img {
-                                background-image: url("images/01_history/side/01_icon01b.gif");
-                            }
-                            #link_02 img {
-                                background-image: url("images/01_history/side/01_icon02a.gif");
-                            }
-                            #link_02:hover img {
-                                background-image: url("images/01_history/side/01_icon02b.gif");
-                            }
-                            #link_03 img {
-                                background-image: url("images/01_history/side/01_icon03a.gif");
-                            }
-                            #link_03:hover img {
-                                background-image: url("images/01_history/side/01_icon03b.gif");
-                            }
+                            #link_01 { background-image: url("images/01/nav/button1-1.jpg"); }
+                            #link_01:hover { background-image: url("images/01/nav/button1-2.jpg"); }
+                            #link_02 { background-image: url("images/01/nav/button2-1.jpg"); }
+                            #link_02:hover { background-image: url("images/01/nav/button2-2.jpg"); }
+                            #link_03 { background-image: url("images/01/nav/button3-1.jpg"); }
+                            #link_03:hover { background-image: url("images/01/nav/button3-2.jpg"); }
+                            #link_04 { background-image: url("images/01/nav/button4-1.jpg"); }
+                            #link_04:hover { background-image: url("images/01/nav/button4-2.jpg"); }
+                            #link_05 { background-image: url("images/01/nav/button5-1.jpg"); }
+                            #link_05:hover { background-image: url("images/01/nav/button5-2.jpg"); }
                         </style>
-                        <!-- <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            <a href="#" id="link_03" onclick="showContent('content3')"><img class="image_button" alt="link3"></a>
-                        </div> -->
+                        <div class="side_button_group">
+                            <a href="#" class="image_button"  id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button"  id="link_02" onclick="showContent('content2')"></a>
+                            <a href="#" class="image_button"  id="link_03" onclick="showContent('content3')"></a>
+                            <a href="#" class="image_button"  id="link_04" onclick="showContent('content4')"></a>
+                            <a href="#" class="image_button"  id="link_05" onclick="showContent('content5')"></a>
+                        </div>
                     </div>
                     
                    <!--主要內容區-->
-                    <div class="main-section" id="main-section" style="width: 614px;">
+                    <div class="main-section" id="main-section" style="width: 614px; min-height: 200px;">
                         <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="" style="background-color: #1e78ab;">
