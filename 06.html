@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戲劇欣賞系列-兒童劇</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/06/nav/guide_04.gif';
+        const navButtonGroupImage = '';
+        const navLogoImage = '';
+        const navBackgroundImage = '';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+            width: 530px;
+            margin-left: 36px;
+        }
+        .content h1 {
+            color: #e0ff05;
+            line-height: 28px;
+            font-size: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .content h3 {
+            color: #CC0066;
+            line-height: 20px;
+            font-size: 15px;
+        }
+        .content .content_section {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 2px;
+            padding-bottom: 20px;
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="background-color: #ffff65;">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <!-- 變更：按照頁面需求更換side -->
+            <include src="partial/side_06.html"></include>
+            <!-- end變更：按照頁面需求更換side -->
+            <div class="main-section" style="width: 614px;">
+                <div class="section">
+                    <div class="nav-section" style="width: 606px; height: 95px; background-image: url('images/06/nav/guide_05n.jpg'); background-repeat: no-repeat;">
+                        <style>
+                            .side_button_group {
+                                display: flex;
+                                padding-top: 10px;
+                                padding-left: 290px;
+                            }
+                            .image_button {
+                                height: 15px;
+                                margin-left: 5px;
+                                margin-right: 5px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            #link_01 { background-image: url("images/05/nav/6_1.gif"); }
+                            #link_01:hover { background-image: url("images/05/nav/6_1-over.gif"); }
+                            #link_02 { background-image: url("images/05/nav/6_2.gif"); }
+                            #link_02:hover { background-image: url("images/05/nav/6_2-over.gif"); }
+                            #link_03 { background-image: url("images/05/nav/6_3.gif"); }
+                            #link_03:hover { background-image: url("images/05/nav/6_3-over.gif"); }
+                            #link_04 { background-image: url("images/05/nav/6_4.gif"); }
+                            #link_04:hover { background-image: url("images/05/nav/6_4-over.gif"); }
+                            #link_05 { background-image: url("images/05/nav/6_5.gif"); }
+                            #link_05:hover { background-image: url("images/05/nav/6_5-over.gif"); }
+                        </style>
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 614px; min-height: 200px; background-repeat: repeat-y;">
+                       
+					   <!--content1頁面-->
+                        <div class="content" id="content1">
+                            <style>
+                                .content_main {
+                                    background-image: url('images/06/content/guide.png'); 
+                                    width: 530px; 
+                                    height: 307px;
+                                    background-size: 530px, 307px;
+                                }
+                            </style>
+                             <div class="content_main"></div>
+                        </div><!--content1頁面 結束-->
+                    </div>
+                    <div class="nav-section" style="width: 614px; height: 82px; background-image: url('images/06/nav/guide_05.gif'); background-repeat: no-repeat;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>
