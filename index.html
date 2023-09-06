@@ -9,16 +9,16 @@
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/introductory.css">
     <link rel="stylesheet" href="css/image-switch-button.css">
-    <script>
+<script>
         // 按照頁面需求更換
-        const thisPage = '01_introductory';
+        const thisPage = '00';
         const thisSide = 'side_default';
 
         const mainBackground = 'images/01_history/content/m_bg.jpg';
         const navButtonGroupImage = 'images/01_history/top01_01.jpg';
     </script>
     <style>
-        .display-none {
+/*        .display-none {
             display: none;
         }
         .content {
@@ -26,7 +26,7 @@
             margin-left: 52px;
             margin-right: 63px;
             margin-bottom: 10px;
-            /* border: 1px solid #aaa; */
+            /* border: 1px solid #aaa; 
             background-color: transparent;
             color: #363637;
             font-size: smaller;
@@ -42,15 +42,104 @@
         }
         .content-body img {
             width: 100%;
-        }
+        }*/
     body {
 	background-color: #FFF86F;
 }
+
+
+  .main {
+	background-image: url('images/index.jpg');
+	width: 1019px;
+	height: 600px;
+	position: relative;
+	background-size: cover;
+  }
+  .display-none {
+    display: none;
+  }
+  .link_image_group {
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  }
+  .link_image_group a {
+	position: absolute;
+	width: 395px;
+  }
+  #d1 {
+	background-image: url('images/index-btn1.png');
+	width: 130px;
+	height: 130px;
+	top: 237px;
+	left: 95px;
+	background-size: cover;
+  }
+  #d2 {
+	background-image: url('images/index-btn2.png');
+	width: 130px;
+	height: 130px;
+	top: 97px;
+	left: 177px;
+	background-size: cover;
+  }
+  #d3 {
+	background-image: url(images/index-btn3.png);
+	width: 130px;
+	height: 130px;
+	top: 16px;
+	left: 488px;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  #d4 {
+	background-image: url('images/index-btn4.png');
+	width: 130px;
+	height: 130px;
+	top: 101px;
+	left: 722px;
+	background-size: cover;
+  }
+  #d5 {
+	background-image: url('images/index-btn5.png');
+	width: 130px;
+	height: 130px;
+	top: 287px;
+	left: 766px;
+	background-size: cover;
+  }
+  #d6 {
+	background-image: url('images/index-btn6.png');
+	width: 130px;
+	height: 130px;
+	top: 412px;
+	left: 518px;
+	background-size: cover;
+  }
+/*  #d7 {
+	background-image: url('images/index-btn7.png');
+	width: 130px;
+	height: 130px;
+	top: 435px;
+	left: 531px;
+	background-size: cover;
+  }*/
+  #d8 {
+	background-image: url('images/logo.jpg');
+	width: 274px;
+	height: 50px;
+	top: 9px;
+	left: 6px;
+	background-size: cover;
+  }
+
+  
     </style>
 </head>
 <body>
 
-<div><img src="images/index.jpg" alt="" width="860">
+<div>
+<!--<img src="images/index.jpg" alt="" width="860">
 
 
 <div style="position:relative; left50px;top:-500px">
@@ -81,9 +170,19 @@
 
 </div>
 
+</div>-->
+
+<div class="main">
+  <div class="link_image_group">
+    <div class="link_image_group">
+      <div class="link_image_group">
+        <div class="link_image_group"> <a href="01.html" id="d1"></a> <a href="02.html" id="d2"></a> <a href="03.html" name="d3" id="d3"></a> <a href="04.html" id="d4"></a> <a href="05.html" id="d5"></a> <a href="06.html" id="d6"></a>
+          <!--  <a href="07.html" id="d7"></a> -->
+          <a href="https://www.arte.gov.tw/" id="d8"></a> </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
+  
 </body>
 </html>
