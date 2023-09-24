@@ -107,8 +107,68 @@
                        
 					   <!--content1頁面-->
                         <div class="content" id="content1">
-                            <div class="" style="background-color: #BE9728;">
-                                <h1><strong>　劇場形式</strong></h1>
+                            <div class="" style="background-color: #BE9728; display: flex;">
+                                <h1 style="width: 500px;"><strong>　劇場形式</strong></h1>
+                                <style>
+                                    .dropdown_button {
+                                        width: 81px;
+                                        height: 33px;
+                                        background-image: url('images/03/button5a.gif');
+                                        background-size: cover;
+                                        position: relative;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin-top: 3px;
+                                        font-size: 1.5rem;
+                                        cursor: pointer;
+                                    }
+
+                                    .dropdown-content {
+                                        display: none;
+                                        position: absolute;
+                                        top: 33px;
+                                        left: -50px;
+                                        width: 260px;
+                                        transform: translateX(-50%);
+                                        z-index: 1;
+                                        border: 1px solid #ccc;
+                                        background-color: #f9f9f9;
+                                    }
+                                    .dropdown-content p {
+                                        color: #fffed1;
+                                        font-size: 16px;
+                                        background: #6486bb;
+                                        margin-bottom: 0rem;
+                                    }
+                                    .dropdown-content a {
+                                        color: white;
+                                        text-shadow: 
+                                            -1px -1px 0 #3f74ae,
+                                            1px -1px 0 #3f74ae,
+                                            -1px 1px 0 #3f74ae,
+                                            1px 1px 0 #3f74ae;
+                                        font-size: 16px;
+                                        padding: 6px 8px;
+                                        text-decoration: none;
+                                        display: block;
+                                    }
+
+                                    .dropdown_button:hover .dropdown-content {
+                                        display: block;
+                                    }
+
+                                    .dropdown-content a:hover {
+                                        background-color: #ddd;
+                                    }
+                                </style>
+                                <div class="dropdown_button">
+                                    <div class="dropdown-content">
+                                        <p>位於國立臺北藝術大學的露天劇場：</p>
+                                        <a href="#" style="background: #8dbbe9;">戶外劇場</a>
+                                        <a href="#" style="background: #d6fefe;">荒山劇場</a>
+                                    </div>
+                                </div>
                             </div>
                             
                             <!-- <p style="width:300px; margin-left:45%" align="right">露天劇場 ->要做下選單連影片</p>-->                            
@@ -194,8 +254,81 @@
 						
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                            <div class="" style="background-color: #BE9728;">
-                                <h1><strong>　劇場設備</strong></h1>
+                            <div class="" style="background-color: #BE9728; display: flex;">
+                                <h1 style="width: 500px;"><strong>　劇場設備</strong></h1>
+                                <style>
+                                    #dropdown_button02 {
+                                        width: 81px;
+                                        height: 33px;
+                                        background-image: url('images/03/button6b.gif');
+                                        background-size: cover;
+                                        position: relative;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin-top: 3px;
+                                        font-size: 1.5rem;
+                                        cursor: pointer;
+                                    }
+
+                                    .dropdown-content {
+                                        display: none;
+                                        position: absolute;
+                                        top: 33px;
+                                        left: -50px;
+                                        width: 260px;
+                                        transform: translateX(-50%);
+                                        z-index: 1;
+                                        border: 1px solid #ccc;
+                                        background-color: #f9f9f9;
+                                    }
+                                    .dropdown-content p {
+                                        color: #fffed1;
+                                        font-size: 16px;
+                                        background: #6486bb;
+                                        margin-bottom: 0rem;
+                                    }
+                                    .dropdown-content a, .selector_section {
+                                        color: white;
+                                        text-shadow: 
+                                            -1px -1px 0 #3f74ae,
+                                            1px -1px 0 #3f74ae,
+                                            -1px 1px 0 #3f74ae,
+                                            1px 1px 0 #3f74ae;
+                                        font-size: 16px;
+                                        padding: 6px 8px;
+                                        text-decoration: none;
+                                        display: block;
+                                    }
+                                    .dropdown-content a {
+                                        margin-left: 20px;
+                                    }
+
+                                    #dropdown_button02:hover .dropdown-content {
+                                        display: block;
+                                    }
+
+                                    .dropdown-content a:hover {
+                                        background-color: #ddd;
+                                    }
+                                </style>
+                                <div id="dropdown_button02">
+                                    <div class="dropdown-content">
+                                        <p>現在就請進入國立臺北藝術大學，參觀一下劇場吧！（請點選觀看影片）</p>
+                                        <p class="selector_section" style="background: #8dbbe9;">戲劇廳</p>
+                                        <a href="" style="background: #d6fefe;">戲劇廳環場</a>
+                                        <a href="" style="background: #d6fefe;">天幕</a>
+                                        <a href="" style="background: #d6fefe;">後台區</a>
+                                        <a href="" style="background: #d6fefe;">上方鋼棚</a>
+                                        <a href="" style="background: #d6fefe;">懸吊系統</a>
+                                        <p class="selector_section" style="background: #8dbbe9;">舞蹈廳</p>
+                                        <a href="" style="background: #d6fefe;">舞蹈廳環場</a>
+                                        <a href="" style="background: #d6fefe;">吊桿</a>
+                                        <a href="" style="background: #d6fefe;">控制室</a>
+                                        <a href="" style="background: #d6fefe;">座位</a>
+                                        <a href="" style="background: #d6fefe;">燈光系統</a>
+                                    </div>
+                                </div>
                             </div>
                             
                              <!--<p style="width:300px; margin-left:45%" align="right">劇場參觀->要做下選單連影片</p>-->

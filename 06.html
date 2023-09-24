@@ -109,9 +109,99 @@
                                     width: 530px; 
                                     height: 307px;
                                     background-size: 530px, 307px;
+                                    position: relative;
                                 }
+                                .chapter_link {
+                                    width: 90px;
+                                    height: 90px;
+                                    position: absolute;
+                                    left: 24px;
+                                    top: 90px;
+                                    cursor: pointer;
+                                }
+                                .section_links {
+                                    display: block;
+                                    width: max-content;
+                                    background: #f9da4a;
+                                    padding-left: 2px;
+                                    margin-left: 90px;
+                                    display: none;
+                                }
+                                .section_links a {
+                                    display: block;
+                                    color: #9c473f;
+                                    text-decoration: none;
+                                }
+                                .section_links a:hover {
+                                    color: white;
+                                    text-shadow: 
+                                        -1px -1px 0 #9c473f,
+                                        1px -1px 0 #9c473f,
+                                        -1px 1px 0 #9c473f,
+                                        1px 1px 0 #9c473f;
+                                    text-decoration: none;
+                                }
+                                #chapter_link01 {left: 24px; top: 90px;}
+                                #chapter_link02 {left: 156px; top: 90px;}
+                                #chapter_link03 {left: 276px; top: 90px;}
+                                #chapter_link04 {left: 390px; top: 90px;}
+                                #chapter_link05 {left: 36px; top: 181px;}
+                                #chapter_link06 {left: 164px; top: 181px;}
+                                #chapter_link07 {left: 284px; top: 181px;}
+                                #chapter_link08 {left: 400px; top: 181px;}
+
+                                #chapter_link01:hover #section_lin01 {display: block;}
+                                #chapter_link02:hover #section_lin02 {display: block;}
+                                #chapter_link03:hover #section_lin03 {display: block;}
+                                #chapter_link04:hover #section_lin04 {display: block;}
+                                #chapter_link05:hover #section_lin05 {display: block;}
                             </style>
-                             <div class="content_main"></div>
+                             <div class="content_main">
+                                <div class="chapter_link" id="chapter_link01">
+                                    <div class="section_links" id="section_lin01">
+                                        <a href="">定義</a>
+                                        <a href="">源起</a>
+                                        <a href="">發展</a>
+                                        <a href="">類型</a>
+                                        <a href="">要素</a>
+                                    </div>
+                                </div>
+                                <div class="chapter_link" id="chapter_link02">
+                                    <div class="section_links" id="section_lin02">
+                                        <a href="">劇場形式</a>
+                                        <a href="">劇場設備</a>
+                                        <a href="">工作分配</a>
+                                    </div>
+                                </div>
+                                <div class="chapter_link" id="chapter_link03">
+                                    <div class="section_links" id="section_lin03">
+                                        <a href="">概說</a>
+                                        <a href="">兒童劇</a>
+                                        <a href="">劇場禮儀</a>
+                                        <a href="">好戲選段</a>
+                                    </div>
+                                </div>
+                                <div class="chapter_link" id="chapter_link04">
+                                    <div class="section_links" id="section_lin04">
+                                        <a href="">創造性戲劇</a>
+                                        <a href="">基本練習</a>
+                                        <a href="">教材教法</a>
+                                        <a href="">遊戲天地</a>
+                                    </div>
+                                </div>
+                                <div class="chapter_link" id="chapter_link05">
+                                    <div class="section_links" id="section_lin05">
+                                        <a href="">演出資訊</a>
+                                        <a href="">購票方式</a>
+                                        <a href="">演出場地</a>
+                                        <a href="">網站連結</a>
+                                        <a href="">參考文獻</a>
+                                    </div>
+                                </div>
+                                <a href="" class="chapter_link" id="chapter_link06"></a>
+                                <a href="" class="chapter_link" id="chapter_link07"></a>
+                                <a href="" class="chapter_link" id="chapter_link08"></a>
+                             </div>
                         </div><!--content1頁面 結束-->
                     </div>
                     <div class="nav-section" style="width: 614px; height: 82px; background-image: url('images/06/nav/guide_05.gif'); background-repeat: no-repeat;"></div>

@@ -101,6 +101,15 @@
                             #link_04:hover { background-image: url("images/05/nav/6_4_01-over.gif"); }
                             #link_05 { background-image: url("images/05/nav/6_5.gif"); }
                             #link_05:hover { background-image: url("images/05/nav/6_5-over.gif"); }
+
+                            body:after {
+                                display: none;
+                                content: url('images/05/nav/6_1-over.gif') 
+                                         url('images/05/nav/6_2-over.gif') 
+                                         url('images/05/nav/6_3-over.gif') 
+                                         url('images/05/nav/6_4_01-over.gif') 
+                                         url('images/05/nav/6_5-over.gif');
+                            }
                         </style>
                         <div class="side_button_group">
                             <a href="#" class="image_button" id="link_01" style="width: 71px;" onclick="showContent('content1')"></a>
