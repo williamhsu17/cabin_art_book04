@@ -850,7 +850,7 @@
 
 </body>
  <!-- 點擊產生聲音區 -->
-    <script>
+<script>
   document.addEventListener('DOMContentLoaded', function() {
       const images = document.querySelectorAll('.sound_image');
       
@@ -876,6 +876,37 @@
           });
       });
   });
+  window.onload=function(){
+    // 按照頁面需求更換
+    const mainSection = document.getElementById("main-section")
+    mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+
+    let params = new URLSearchParams(window.location.search);
+
+    if (params.has('content')) {
+        let content = params.get('content');
+        
+        switch (content) {
+            case '1':
+                showContent('content1');
+                break;
+            case '2':
+                showContent('content2');
+                break;
+            case '3':
+                showContent('content3');
+                break;
+            case '4':
+                showContent('content4');
+                break;
+            case '5':
+                showContent('content5');
+                break;
+            default:
+                showContent('content1');
+        }
+    }
+  }
 </script>
 
 
