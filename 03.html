@@ -1,882 +1,1266 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>戲劇欣賞系列-兒童劇</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>戲劇欣賞系列-兒童劇</title>
 
-    <script src="js/htmlinclude.js"></script>
-    <include src="partial/header.html"></include>
-    <link rel="stylesheet" href="css/image-switch-button.css">
-    <script>
-        // 按照頁面需求更換
-        const thisPage = '03';
-        const thisSide = 'side_default';
+  <script src="js/htmlinclude.js"></script>
+  <include src="partial/header.html"></include>
+  <link rel="stylesheet" href="css/image-switch-button.css">
+  <script>
+    // 按照頁面需求更換
+    const thisPage = '03';
+    const thisSide = 'side_default';
 
-        const mainBackground = 'images/03/nav/enjoy_06.gif';
-        const navButtonGroupImage = '';
-        const navLogoImage = '';
-        const navBackgroundImage = '';
-    </script>
-    <style>
-        .display-none {
-            display: none;
-        }
-        .content {
-            /* border: 1px solid #aaa; */
-            background-color: transparent;
-            color: #363637;
-            font-size: 14px;
-            width: 555px;
-            margin-left: 25px;
-        }
-        .content h1 {
-            color: #FF531A;
-            line-height: 28px;
-            font-size: 24px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .content h3 {
-            color: #CC0066;
-            line-height: 20px;
-            font-size: 15px;
-        }
-        .content .content_section {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 2px;
-            padding-bottom: 20px;
-        }
-        .content-title-image {
-            width: 100%;
-        }
-        .content-body {
-            display: flex;
-        }
-        .content-body p {
-            margin-left: 2px;
-        }
-        .content-body img {
-            width: 100%;
-        }
-    </style>
+    const mainBackground = 'images/03/nav/enjoy_06.gif';
+    const navButtonGroupImage = '';
+    const navLogoImage = '';
+    const navBackgroundImage = '';
+  </script>
+  <style>
+    .display-none {
+      display: none;
+    }
+
+    .content {
+      /* border: 1px solid #aaa; */
+      background-color: transparent;
+      color: #363637;
+      font-size: 14px;
+      width: 555px;
+      margin-left: 25px;
+    }
+
+    .content h2 {
+      color: #FF531A;
+      line-height: 28px;
+      font-size: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .content h3 {
+      color: #CC0066;
+      line-height: 20px;
+      font-size: 15px;
+    }
+
+    .content .content_section {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 2px;
+      padding-bottom: 20px;
+    }
+
+    .content-title-image {
+      width: 100%;
+    }
+
+    .content-body {
+      display: flex;
+    }
+
+    .content-body p {
+      margin-left: 2px;
+    }
+
+    .content-body img {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body style="background-color: #ffd7b0;">
-    <div class="container mx-auto container-section" id="container-section-image">
-        <div class="row">
-            <!-- 變更：按照頁面需求更換side -->
-            <include src="partial/side_03.html"></include>
-            <!-- end變更：按照頁面需求更換side -->
-            <div class="main-section" style="width: 614px;">
-                <div class="section">
-                    <div class="nav-section" style="width: 606px; height: 61px; background-image: url('images/03/nav/enjoy_00.jpg'); background-repeat: no-repeat;">
-                        <style>
-                            .side_button_group {
-                                padding-top: 20px;
-                                padding-left: 290px;
-                            }
-                            .image_button {
-                                display: block;
-                                height: 14px;
-                                margin-left: 10px;
-                                margin-right: 10px;
-                                font-size: 0;
-                                margin-bottom: 1px;
-                            }
-                            #link_01 { background-image: url("images/03/nav/w-5a.gif"); }
-                            #link_01:hover { background-image: url("images/03/nav/w-5b.gif"); }
-                            #link_02 { background-image: url("images/03/nav/w-1b.jpg"); }
-                            #link_02:hover { background-image: url("images/03/nav/w-1b.gif"); }
-                            #link_03 { background-image: url("images/03/nav/w-3a.gif"); }
-                            #link_03:hover { background-image: url("images/03/nav/w-3b.gif"); }
-                            #link_04 { background-image: url("images/03/nav/w-4a.gif"); }
-                            #link_04:hover { background-image: url("images/03/nav/w-4b.gif"); }
-                        </style>
-                        <div class="side_button_group">
-                            <div class="dice_group">
-                                <img src="images/03/nav/dice.gif" style="padding-left: 20px;" alt="圖標">
-                                <img src="images/03/nav/dice.gif" style="padding-left: 40px;" alt="圖標">
-                                <img src="images/03/nav/dice.gif" style="padding-left: 40px;" alt="圖標">
-                                <img src="images/03/nav/dice.gif" style="padding-left: 60px;" alt="圖標">
-                            </div>
-                            <div class="button_group" style="display: flex;">
-                                <a href="#" class="image_button" id="link_01" style="width: 28px;font-size: 0;" onclick="showContent('content1')">內容區1</a>
-                                <a href="#" class="image_button" id="link_02" style="width: 42px; font-size: 0;" onclick="showContent('content2')" >內容區2</a>
-                                <a href="#" class="image_button" id="link_03" style="width: 58px;font-size: 0;" onclick="showContent('content3')">內容區3</a>
-                                <a href="#" class="image_button" id="link_04" style="width: 58px; font-size: 0;" onclick="showContent('content4')">內容區4</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   <!--主要內容區-->
-                    <div class="main-section" id="main-section" style="width: 614px; min-height: 200px; background-repeat: repeat-y;">
-                       
-					   <!--content1頁面-->
-                        <div class="content" id="content1">
-                            <div class="" style="background-color: #FFB468;">
-                                <h1><strong>　概說</strong></h1>
-                            </div>
-                            
-                            <div class="content_section" style="background-image: url('images/03/content/3-1/61.jpg'); height: 394px;">
-                                <p style="width: 195px;"><font color=BB5010>廣義的「兒童戲劇」，應包含「兒童劇觀賞」和「創造性戲劇」兩項。兒童的年齡概括為4-15歲，亦即幼兒園至國中畢業。而高中學生應已初具欣賞成人劇的條件，故不在此範圍內。下面我們來認識一下<a href="#" onclick="showContent('content2')"  style="font-size: 0;">內容區2兒童劇</a>和<a href="04.html">創造性戲劇</a>的本質。</font></p>
-                            </div>
+  <h1 style="font-size: 0; margin: 0; padding: 0;">戲劇欣賞系列-兒童劇</h1>
+  <div class="container mx-auto container-section" id="container-section-image">
+    <div class="row">
+      <!-- 變更：按照頁面需求更換side -->
+      <include src="partial/side_03.html"></include>
+      <!-- end變更：按照頁面需求更換side -->
+      <div class="main-section" style="width: 614px;">
+        <div class="section">
+          <div class="nav-section"
+            style="width: 606px; height: 61px; background-image: url('images/03/nav/enjoy_00.jpg'); background-repeat: no-repeat;">
+            <style>
+              .side_button_group {
+                padding-top: 20px;
+                padding-left: 290px;
+              }
 
-                             
-                        </div><!--content1頁面 結束-->
-                        
-                        
-						
-                        <!--content2頁面-->
-                        <div class="content display-none" id="content2">
-                         <div class="" style="background-color: #FFB468;">
-                                <h1><strong>　兒童劇</strong></h1>
-                            </div>
-                            
+              .image_button {
+                display: block;
+                height: 14px;
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 0;
+                margin-bottom: 1px;
+              }
 
+              #link_01 {
+                background-image: url("images/03/nav/w-5a.gif");
+              }
 
-<table width="555" border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr bgcolor="FAA55A">
-      <td colspan="2"><table width="100" border="0" cellspacing="2" cellpadding="2">
-        <tbody>
-          <tr>
-            <td><font color=C32619 size=3>定義：</font></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-    <tr>
-      <td bgcolor="FFE0A0" width="332" valign="top" height="116"><table width="332" border="0" cellspacing="3" cellpadding="5">
-        <tbody>
-          <tr>
-            <td valign="top" height="92">由成人專業兒童劇團演出、供兒童欣賞之高水準戲劇藝術。要觀摩優良的藝術品，才能達到陶冶性情，培養氣質的目的，所以品質就非常重要。同時，要有良好的劇場設備。不良的場地，無法執行好的設計，且會降低藝術的品質。</td>
-          </tr>
-        </tbody>
-      </table></td>
-      <td bgcolor="FFE0A0" width="222" align="left" background="images/03/content/3-2/51.jpg" height="116"> </td>
-    </tr>
-  </tbody>
-</table>
-<table width="555" border="0" cellspacing="0" cellpadding="0" height="246">
-  <tbody>
-    <tr bgcolor="FBAA86">
-      <td bgcolor="FBAA86"><table width="126" border="0" cellspacing="2" cellpadding="2">
-        <tbody>
-          <tr>
-            <td><font color=C32619 size=3>功效：</font></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-    <tr>
-      <td background="images/03/content/3-2/47.jpg" valign="top" height="249"><table width="488" border="0" cellspacing="2" cellpadding="0">
-        <tbody>
-          <tr>
-            <td valign="top" align="center" width="20" background=""><img src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
-            <td width="456" valign="top" background=><font color=990066>娛樂 ─ </font>
-              兒童劇最重要的功效和目的是提供有益身心的正當娛樂。</td>
-          </tr>
-        </tbody>
-      </table>
-        <table width="547" border="0" cellspacing="2" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" align="center" width="20" background=""><img src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
-              <td width="521" background=><font color=990066>欣賞藝術 ─ </font>
-              戲劇是多種藝術的綜合體，欣賞戲劇即可同時經驗音樂、舞蹈、文學、美術及其他視覺藝術之美。</td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="356" border="0" cellspacing="2" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" align="center" width="20" background=""><img src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
-              <td width="318" background=><font color=990066>體驗生活 ─ </font>
-              兒童劇可以讓兒童在安全的模擬情況下，增長閱歷，體驗生活，甚至日常生活中不易遭遇到的事件，如面對綁票、火災時的情形。</td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="357" border="0" cellspacing="2" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" align="center" width="20" background=""><img src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
-              <td width="304" valign="top" height="2" background=><font color=990066>認識多元文化 ─ </font>
-              透過戲劇中的素材，兒童可以學習到不同民族的風俗習慣、培養其世界觀。</td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="322" border="0" cellspacing="2" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" align="center" width="20" background=""><img src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
-              <td width="296" valign="top" height="2" background=><font color=990066>增加學習機會 ─ </font>
-              兒童劇中所用的語言、所傳達的理念和智識，都經過特別的設計和安排，接近兒童的興趣，容易被吸收。</td>
-            </tr>
-          </tbody>
-        </table>
-        <table width="315" border="0" cellspacing="2" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" align="center" width="20" background=""><img src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
-              <td width="263" valign="top" background=><font color=990066>養成觀劇的習慣 ─ </font>
-              自小養成看戲的習慣，即是替未來儲備戲劇人口。</td>
-            </tr>
-          </tbody>
-        </table></td>
-    </tr>
-  </tbody>
-</table>
-<table width="554" border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr bgcolor="FAA55A">
-      <td><table width="143" border="0" cellspacing="2" cellpadding="2">
-        <tbody>
-          <tr>
-            <td><font color=C32619 size=3>年齡與興趣：</font></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-    <tr>
-      <td bgcolor="FFE0A0" background="images/03/content/3-2/49.jpg" valign="top" align="right" height="237"><table width="555" border="0" cellspacing="2" cellpadding="5" height="237">
-        <tbody>
-          <tr>
-            <td valign="top"><div align="right">
-              <p>　　一般而言，依兒童身心發展的階段，兒童觀眾的年齡<br />
-                層可分為 4-6 歲、7-9 歲、10-12 歲以及 13-15 歲等四個階段。<br />
-                每一年齡層都有其適齡的故事內容、長度和處理手法。<br />
-                一齣好的兒童劇需考慮到觀眾的年齡層及各層級的身<br />
-                心發展和興趣。這是兒童劇最具挑戰性的一點。<br />
-                太低估或太高估兒童觀眾的領悟力，都容易使<br />
-                他們失去興趣，導致喧嘩或瞌睡。例如 4-9 歲<br />
-                的小朋友喜歡可愛的動物；10-12 歲的孩子喜歡<br />
-                英雄事蹟；13-15 歲的學生喜歡冒險和愛情故事。不<br />
-                過，有能力的劇團有時候會選擇跨年齡層的作法，使<br />
-                演出能有廣大的觀眾，有助經濟效益 。　　　　　　　<br />
-              </p>
-            </div></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
-<table width="555" border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td bgcolor="FBAA86"><table width="296" border="0" cellspacing="2" cellpadding="2">
-        <tbody>
-          <tr>
-            <td><font color=C32619 size=3>表現形式：</font></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-    <tr>
-      <td valign="top" background="images/03/content/3-2/50.jpg" height="139"><table width="300" border="0" cellspacing="2" cellpadding="5">
-        <tbody>
-          <tr>
-            <td height="73" valign="top" background=>兒童的想像力豐富，只要略作暗示，他們便能接受。因此，設計不需過於寫實。過多的寫實佈景變化反而打斷了劇情的連貫性；逼真的大野狼，往往會嚇哭 4-6 歲的小朋友；一棵由人扮演的老樹，在臺上隨時伸出援手，會獲得滿堂彩；在眾目睽睽之下，一陣濃煙，燈光一閃，青蛙變成王子，會引來聲聲讚美；幽默的對話和富暗示性的雙關語，會比肢體的逗趣更吸引國中的學生。</td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
-<table width="555" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td valign="top" background=><table width="555" border="0" cellspacing="0" cellpadding="0" height="187">
-        <tbody>
-          <tr>
-            <td background="images/03/content/3-2/52.jpg" valign="top" height="197"><table width="178" border="0" cellspacing="2" cellpadding="2">
-              <tbody>
-                <tr>
-                  <td><font color=C32619 size=3>與觀眾互動：</font></td>
-                </tr>
-              </tbody>
-            </table>
-              <table width="286" border="0" cellspacing="2" cellpadding="2">
-                <tbody>
-                  <tr>
-                    <td height="63" valign="top" background=>這是兒童劇團常用的技巧。為的是讓觀眾更有參與感、更投入。使用時要設計好開始及結束互動的訊號，並練習純熟，以免造成不必要的喧鬧。低年級的小朋友參加互動的意願常比高年級的強，也比較主動。不過如果處理得不好，常會造成觀眾情緒失控的局面，甚至會使演出中斷，或破壞預期的效果。</td>
-                  </tr>
-                </tbody>
-              </table></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
-<table width="554" border="0" cellspacing="0" cellpadding="0" height="205">
-  <tbody>
-    <tr>
-      <td ><table width="555" border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr bgcolor="FBAA86">
-            <td bgcolor="FBAA86"><table width="150" border="0" cellspacing="2" cellpadding="2" height="19">
-              <tbody>
-                <tr>
-                  <td><font color=C32619 size=3>欣賞力的培養：</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td background="images/03/content/3-2/53.jpg" valign="top" align="right" height="235"><table width="437" border="0" cellspacing="0" cellpadding="5" height="43">
-              <tbody>
-                <tr>
-                  <td valign="top" background=>戲劇欣賞是需要學習的，因此正確欣賞方法的介紹與運用，也是很重要的。老師或家長可以做以下兩項活動，幫助兒童欣賞戲劇。</td>
-                </tr>
-              </tbody>
-            </table>
-              <table width="389" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                  <tr>
-                    <td height="200" valign="top" background=><p><img src="images/03/content/icon.gif" alt="圖標" width="13" height="13" hspace="3" align="texttop" /><font color="990066">觀劇前活動 ─ </font> 收集有關劇團或要看的劇目的資料，將戲的故事及特色介紹給小朋友。<br />
-                      <img src="images/03/content/icon.gif" alt="圖標" width="13" height="13" hspace="3" align="texttop" /><font color="990066">觀劇後活動 ─ </font> 以口頭問答、繪畫、或文字敘述的方式，複習劇情、人物特色、主題、重要訊息、語言、視覺效果、音樂等，看小朋友瞭解或吸收多少，做為瞭解孩子性向和智力發展的參考。</p>
-                      因為這兩項活動由老師做比較有系統，也比較專業，所以歐美國家特別重視利用上課時間，由教師帶學生去看戲。</td>
-                  </tr>
-                </tbody>
-              </table></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
-<table width="555" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td valign="top"><table width="555" border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr>
-            <td align="right" valign="top" background="images/03/content/3-2/55.jpg"><table width="379" border="0" cellspacing="2" cellpadding="2" height="29">
-              <tbody>
-                <tr>
-                  <td background=><font color=C32619 size=3>劇場：</font></td>
-                </tr>
-              </tbody>
-            </table>
-              <table width="379" border="0" cellspacing="3" cellpadding="5">
-                <tbody>
-                  <tr>
-                    <td valign="top" background=>有的劇種只適宜在小型劇場演出，如影戲和偶戲，因為戲偶很小，必須與觀眾的距離短，小朋友才會看得真切，互動也就較容易。即使在設備良好的鏡框式舞臺演出大型製作，觀眾席的縱深亦不宜過大，以免坐得遠的小朋友看不清楚而失去興趣。因此兒童劇比較適合在中、小型的劇場演出。</td>
-                  </tr>
-                </tbody>
-              </table></td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
+              #link_01:hover {
+                background-image: url("images/03/nav/w-5b.gif");
+              }
 
+              #link_02 {
+                background-image: url("images/03/nav/w-1b.jpg");
+              }
 
-                        </div><!--content2頁面 結束-->
+              #link_02:hover {
+                background-image: url("images/03/nav/w-1b.gif");
+              }
 
-<!--content3頁面-->
-                        <div class="content display-none" id="content3">
-                       <div class="" style="background-color: #FFB468;">
-                                <h1><strong>　劇場禮儀</strong></h1>
+              #link_03 {
+                background-image: url("images/03/nav/w-3a.gif");
+              }
 
-                            </div>
-                            
-<table width="555" border="0" cellspacing="0" cellpadding="0" bgcolor="FBAA86">
-  <tbody>
-    <tr>
-      <td><div align="center">
-        <table width="545" border="0" cellspacing="2" cellpadding="0" bgcolor="FBAA86">
-          <tbody>
-            <tr>
-              <td width="541" valign="top">除了一些地方野臺戲外，大部分看戲都要購票入場，但也有不賣票而採贈票的方式，以便控制人數。姑且不論是贈票或是購票，去看戲都必須遵守下述禮儀：</td>
-              </tr>
-            </tbody>
-        </table>
-      </div></td>
-    </tr>
-  </tbody>
-</table>
-<table width="554" border="0" cellspacing="0" cellpadding="2">
-  <tbody>
-    <tr>
-      <td bgcolor="#993300"><table width="552" border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr>
-            <td width="22" valign="middle" align="center" bgcolor="FFEABA"><img src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
-            <td width="530" bgcolor="FFEABA">一人一票，準時憑票入場。</td>
-          </tr>
-          <tr>
-            <td width="22" valign="middle" align="center" bgcolor="FFD8AD"><img src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
-            <td width="530" bgcolor="FFD8AD">對號入座。即使較好的位置沒有人坐，也不應該去佔用。</td>
-          </tr>
-          <tr>
-            <td width="22" valign="middle" align="center" bgcolor="FFEABA"><img src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
-            <td width="530" bgcolor="FFEABA">演出進行時，不可交談或任意更換座位，以免干擾其他人觀賞。</td>
-          </tr>
-          <tr>
-            <td width="22" valign="middle" align="center" bgcolor="FFD8AD"><img src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
-            <td width="530" bgcolor="FFD8AD">關閉所有會發出聲響的手機、call 機和鬧錶等，以免干擾演出。</td>
-          </tr>
-          <tr>
-            <td width="22" valign="middle" align="center" bgcolor="FFEABA"><img src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
-            <td width="530" bgcolor="FFEABA">勿在劇場內吃東西或喝飲料。</td>
-          </tr>
-          <tr>
-            <td width="22" valign="middle" align="center" bgcolor="FFD8AD"><img src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
-            <td width="530" bgcolor="FFD8AD">演出結束後，用掌聲表示你的讚賞。</td>
-          </tr>
-        </tbody>
-      </table></td>
-    </tr>
-  </tbody>
-</table>
-<table width="555" border="0" cellspacing="2" cellpadding="0" height="194">
-  <tbody>
-    <tr>
-      <td background="images/03/content/3-3/56.jpg" valign="top"><div align="center">
-        <table width="545" border="0" cellspacing="2" cellpadding="0">
-          <tbody>
-            <tr>
-              <td width="541" valign="top">此外，在離開劇場時，還要記得帶走自己的隨身物品，也不要將宣傳品隨便丟棄在座位上。</td>
-              </tr>
-            </tbody>
-        </table>
-      </div></td>
-    </tr>
-  </tbody>
-</table>
+              #link_03:hover {
+                background-image: url("images/03/nav/w-3b.gif");
+              }
 
-                       </div><!--content3頁面 結束--> 
-					   
-					   <!--content4頁面-->
-                        <div class="content display-none" id="content4">
-                       <div class="" style="background-color: #FFB468;">
-                                <h1><strong>　好戲選段</strong></h1>
-                            </div>
-<div align="center">							
-<table cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center" valign="top" height="1441"><table width="505" cellspacing="3" cellpadding="0">
-      <tbody>
-        <tr>
-          <td valign="top">等了很久了吧？現在好戲正式開鑼囉！我們選了一些兒童戲劇經典作品的片段，現在就請你來點選想觀看的節目吧！</td>
-        </tr>
-      </tbody>
-    </table>
-      <table width="501" border="0" cellspacing="2" cellpadding="0" height="20">
-        <tbody>
-          <tr>
-            <td><img src="images/03/content/3-4/middle5_3.gif" width="500" height="8" alt="好戲選段"/></td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="116">
-        <tbody>
-          <tr>
-            <td bgcolor="FF863B"><table width="300" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td><img src="images/03/content/3-4/dice-4.gif" width="12" height="12" alt="Image"/><font color=FFFFFF><strong>兒童戲曲 ─</strong><font color=FFFFCC>《森林七矮人》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFD752"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：國立臺灣戲曲專科學校國劇團（前國立復興劇團）</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="109">
-              <tbody>
-                <tr>
-                   <td width="117" align="center" valign="top" height="89"><a href="https://youtu.be/AsXoEvfGou8" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="125" align="center" valign="top" height="89"><a href="03-4-1.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
-                  <td width="115" valign="top" height="89">
-                  
-                  <audio data-audio-id="1" class="myAudio"><source src="images/03/content/3-4/01.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio>
-<img data-audio-id="1" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" >
+              #link_04 {
+                background-image: url("images/03/nav/w-4a.gif");
+              }
 
-
-                  </td>
-                  <td width="131" height="89"><img src="images/03/content/3-4/19.gif" width="127" height="97" alt="好戲選段"/></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" valign="top"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="143">
-        <tbody>
-          <tr>
-            <td bgcolor="689900"><table width="300" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12" alt="Image" /><font color=FFFFFF><strong>偶戲 ─</strong><font color=FFFFCC>《奇幻仲夏夜之夢》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="CDC80A"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：一元布偶劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" height="119" align="center" valign="middle"><table width="489" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="142" align="center" height="107"><img src="images/03/content/3-4/23.gif" width="127" height="97" alt="好戲選段"/></td>
-                  <td width="107" align="center" valign="top" height="107"><a href="https://youtu.be/amPAkOHnk6U" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="127" align="center" valign="top" height="107"><a href="03-4-2.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td width="112" valign="top" height="107"><audio data-audio-id="2" class="myAudio"><source src="images/03/content/3-4/02.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="2" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="133">
-        <tbody>
-          <tr>
-            <td bgcolor="FF863B"><table width="300" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td><img src="images/03/content/3-4/dice-4.gif" width="12" height="12" alt="Image"/><font color=FFFFFF><strong>布袋戲 ─</strong><font color=FFFFCC>《武松打虎》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFD752"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：小西園掌中劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" height="113" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88" bgcolor="FFF8CB">
-              <tbody>
-                <tr>
-                  <td width="117" align="center" valign="top" height="98"><a href="https://youtu.be/C2tFdsIFw88" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="122" align="center" valign="top" height="98" bgcolor="FFF8CB"><a href="03-4-3.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td width="118" valign="top" height="98" bgcolor="FFF8CB"><audio data-audio-id="3" class="myAudio"><source src="images/03/content/3-4/03.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="3" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                  <td width="131" height="98"><img src="images/03/content/3-4/26.gif" width="127" height="97" alt="好戲選段"/></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" height="4"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="117">
-        <tbody>
-          <tr>
-            <td bgcolor="689900"><table width="484" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12" alt="Image" /><font color=FFFFFF><strong>舞臺劇加黑光劇的效果 ─</strong><font color=FFFFCC>《滴滴噹噹歷險記》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="CDC80A"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：杯子劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="147" align="center" height="107"><img src="images/03/content/3-4/27.gif" width="127" height="97" alt="好戲選段"/></td>
-                  <td width="105" align="center" valign="top" height="107"><a href="https://youtu.be/Eyg3yG5-5AE" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="121" align="center" valign="top" height="107"><a href="03-4-4.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td valign="top" height="107" width="115"><audio data-audio-id="4" class="myAudio"><source src="images/03/content/3-4/04.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="4" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="109">
-        <tbody>
-          <tr>
-            <td bgcolor="FF863B"><table width="437" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td bordercolor="#FFFFCC"><img src="images/03/content/3-4/dice-4.gif" width="12" height="12" alt="Image"/><font color=FFFFFF><strong>舞臺劇加人偶的演出形式 ─</strong><font color=FFFFCC>《冒險金銀島》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFD752"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：九歌兒童劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="117" align="center" valign="top" height="107"><a href="https://youtu.be/qhEqv_IytMw" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="125" align="center" valign="top" height="107"><a href="03-4-5.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td width="115" valign="top" height="107"><audio data-audio-id="5" class="myAudio"><source src="images/03/content/3-4/05.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="5" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                  <td width="131" height="107"><img src="images/03/content/3-4/30.gif" width="127" height="97" alt="好戲選段"/></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="139">
-        <tbody>
-          <tr>
-            <td bgcolor="689900"><table width="485" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12" alt="Image" /><font color=FFFFFF><strong>黑劇加桌上劇的演出形式 ─</strong><font color=FFFFCC>《漂浮的魔法桌》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="CDC80A"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：鞋子兒童劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="147" align="center" height="107"><img src="images/03/content/3-4/41.gif" width="127" height="97" alt="好戲選段" /></td>
-                  <td width="105" align="center" valign="top" height="107"><a href="https://youtu.be/AvTcO1YF_3g" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="121" align="center" valign="top" height="107"><a href="03-4-6.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td valign="top" height="107" width="115"><audio data-audio-id="6" class="myAudio"><source src="images/03/content/3-4/06.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="6" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="129">
-        <tbody>
-          <tr>
-            <td bgcolor="FF863B" height="10"><table width="437" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td bordercolor="#FFFFCC"><img src="images/03/content/3-4/dice-4.gif" width="12" height="12" alt="Image"/><font color=FFFFFF> <strong>較單純的音樂劇 ─</strong><font color=FFFFCC>《螃蟹與男孩》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFD752"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：牛古演劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="117" align="center" valign="top" height="107"><a href="https://youtu.be/M-q-gKJSzN8" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="125" align="center" valign="top" height="107"><a href="03-4-7.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td width="115" valign="top" height="107"><audio data-audio-id="7" class="myAudio"><source src="images/03/content/3-4/07.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="7" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                  <td width="131" height="107"><img src="images/03/content/3-4/49.gif" width="127" height="97" alt="好戲選段"/></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="131">
-        <tbody>
-          <tr>
-            <td bgcolor="FF863B"><table width="437" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td bordercolor="#FFFFCC"><img src="images/03/content/3-4/dice-4.gif" width="12" height="12" alt="Image"/><font color=FFFFFF><strong>音樂劇演出形式 ─</strong><font color=FFFFCC>《貓捉老鼠》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFD752"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：紙風車劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="146" align="center" height="107"><img src="images/03/content/3-4/33.gif" width="127" height="97" alt="好戲選段"/></td>
-                  <td width="108" align="center" valign="top" height="107"><a href="https://youtu.be/Ek9cUqqh0Ao" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="116" align="center" valign="top" height="107"><a href="03-4-8.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td width="118" valign="top" height="107"><audio data-audio-id="8" class="myAudio"><source src="images/03/content/3-4/08.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="8" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB"> </td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="108">
-        <tbody>
-          <tr>
-            <td bgcolor="689900"><table width="485" border="0" cellspacing="2" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12" alt="Image" /><font color=FFFFFF><strong>舞臺劇加音樂會的演出形式 ─</strong><font color=FFFFCC>《彼得與狼》</font></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="CDC80A"><table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
-              <tbody>
-                <tr>
-                  <td height="2">　演出：魔奇兒童劇團</td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-          <tr>
-            <td bgcolor="FFF8CB" align="center" valign="bottom"><table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
-              <tbody>
-                <tr>
-                  <td width="121" align="center" valign="top" height="107"><a href="https://youtu.be/UOovHndcId0" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-1b.jpg';" onmouseout="this.src='images/03/content/3-4/b-1a.jpg';" src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞"/></a></td>
-                  <td width="112" align="center" valign="top" height="107"><a href="03-4-9.html" target="_blank"  title="在新視窗打開連結"><img onmouseover="this.src='images/03/content/3-4/b-2b.jpg';" onmouseout="this.src='images/03/content/3-4/b-2a.jpg';" src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹"/></a></td>
-                  <td valign="top" height="107" width="116"><audio data-audio-id="9" class="myAudio"><source src="images/03/content/3-4/09.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio> 
-<img data-audio-id="9" class="sound_image" src="images/03/content/3-4/b-3a.jpg" style="cursor: pointer;" onmouseover="this.src='images/03/content/3-4/b-3b.jpg';" onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽" ></td>
-                  <td height="107" width="139"><img src="images/03/content/3-4/42.gif" width="127" height="97" alt="好戲選段"/></td>
-                </tr>
-              </tbody>
-            </table></td>
-          </tr>
-        </tbody>
-      </table>
-      <table width="501" border="0" cellspacing="2" cellpadding="0" height="20">
-        <tbody>
-          <tr>
-            <td><img src="images/03/content/3-4/middle5_3.gif" width="500" height="8" alt="Image"/></td>
-          </tr>
-        </tbody>
-      </table></td>
-  </tr>
-</table>							
-	</div>										
-					   
-					   
-                       </div><!--content4頁面 結束--> 					   
-
-                    </div>
-                    <div class="nav-section" style="width: 614px; height: 82px; background-image: url('images/03/nav/enjoy_05.gif'); background-repeat: no-repeat;"></div>
-                </div>
+              #link_04:hover {
+                background-image: url("images/03/nav/w-4b.gif");
+              }
+            </style>
+            <div class="side_button_group">
+              <div class="dice_group">
+                <img src="images/03/nav/dice.gif" style="padding-left: 20px;" alt="圖標">
+                <img src="images/03/nav/dice.gif" style="padding-left: 40px;" alt="圖標">
+                <img src="images/03/nav/dice.gif" style="padding-left: 40px;" alt="圖標">
+                <img src="images/03/nav/dice.gif" style="padding-left: 60px;" alt="圖標">
+              </div>
+              <div class="button_group" style="display: flex;">
+                <a href="#" class="image_button" id="link_01" style="width: 28px;font-size: 0;"
+                  onclick="showContent('content1')">內容區1</a>
+                <a href="#" class="image_button" id="link_02" style="width: 42px; font-size: 0;"
+                  onclick="showContent('content2')">內容區2</a>
+                <a href="#" class="image_button" id="link_03" style="width: 58px;font-size: 0;"
+                  onclick="showContent('content3')">內容區3</a>
+                <a href="#" class="image_button" id="link_04" style="width: 58px; font-size: 0;"
+                  onclick="showContent('content4')">內容區4</a>
+              </div>
             </div>
+          </div>
+
+          <!--主要內容區-->
+          <div class="main-section" id="main-section"
+            style="width: 614px; min-height: 200px; background-repeat: repeat-y;">
+
+            <!--content1頁面-->
+            <div class="content" id="content1">
+              <div class="" style="background-color: #FFB468;">
+                <h2><strong>　概說</strong></h2>
+              </div>
+
+              <div class="content_section"
+                style="background-image: url('images/03/content/3-1/61.jpg'); height: 394px;">
+                <p style="width: 195px;">
+                  <font color=BB5010>
+                    廣義的「兒童戲劇」，應包含「兒童劇觀賞」和「創造性戲劇」兩項。兒童的年齡概括為4-15歲，亦即幼兒園至國中畢業。而高中學生應已初具欣賞成人劇的條件，故不在此範圍內。下面我們來認識一下<a
+                      href="#" onclick="showContent('content2')" style="font-size: 0;">內容區2兒童劇</a>和<a
+                      href="04.html">創造性戲劇</a>的本質。</font>
+                </p>
+              </div>
+
+
+            </div><!--content1頁面 結束-->
+
+
+
+            <!--content2頁面-->
+            <div class="content display-none" id="content2">
+              <div class="" style="background-color: #FFB468;">
+                <h2><strong>　兒童劇</strong></h2>
+              </div>
+
+
+
+              <table width="555" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr bgcolor="FAA55A">
+                    <td colspan="2">
+                      <table width="100" border="0" cellspacing="2" cellpadding="2">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <font color=C32619 size=3>定義：</font>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="FFE0A0" width="332" valign="top" height="116">
+                      <table width="332" border="0" cellspacing="3" cellpadding="5">
+                        <tbody>
+                          <tr>
+                            <td valign="top" height="92">
+                              由成人專業兒童劇團演出、供兒童欣賞之高水準戲劇藝術。要觀摩優良的藝術品，才能達到陶冶性情，培養氣質的目的，所以品質就非常重要。同時，要有良好的劇場設備。不良的場地，無法執行好的設計，且會降低藝術的品質。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td bgcolor="FFE0A0" width="222" align="left" background="images/03/content/3-2/51.jpg"
+                      height="116"> </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="555" border="0" cellspacing="0" cellpadding="0" height="246">
+                <tbody>
+                  <tr bgcolor="FBAA86">
+                    <td bgcolor="FBAA86">
+                      <table width="126" border="0" cellspacing="2" cellpadding="2">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <font color=C32619 size=3>功效：</font>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td background="images/03/content/3-2/47.jpg" valign="top" height="249">
+                      <table width="488" border="0" cellspacing="2" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" width="20" background=""><img
+                                src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
+                            <td width="456" valign="top" background=>
+                              <font color=990066>娛樂 ─ </font>
+                              兒童劇最重要的功效和目的是提供有益身心的正當娛樂。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="547" border="0" cellspacing="2" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" width="20" background=""><img
+                                src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
+                            <td width="521" background=>
+                              <font color=990066>欣賞藝術 ─ </font>
+                              戲劇是多種藝術的綜合體，欣賞戲劇即可同時經驗音樂、舞蹈、文學、美術及其他視覺藝術之美。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="356" border="0" cellspacing="2" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" width="20" background=""><img
+                                src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
+                            <td width="318" background=>
+                              <font color=990066>體驗生活 ─ </font>
+                              兒童劇可以讓兒童在安全的模擬情況下，增長閱歷，體驗生活，甚至日常生活中不易遭遇到的事件，如面對綁票、火災時的情形。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="357" border="0" cellspacing="2" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" width="20" background=""><img
+                                src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
+                            <td width="304" valign="top" height="2" background=>
+                              <font color=990066>認識多元文化 ─ </font>
+                              透過戲劇中的素材，兒童可以學習到不同民族的風俗習慣、培養其世界觀。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="322" border="0" cellspacing="2" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" width="20" background=""><img
+                                src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
+                            <td width="296" valign="top" height="2" background=>
+                              <font color=990066>增加學習機會 ─ </font>
+                              兒童劇中所用的語言、所傳達的理念和智識，都經過特別的設計和安排，接近兒童的興趣，容易被吸收。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="315" border="0" cellspacing="2" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" width="20" background=""><img
+                                src="images/04/content/icon.gif" alt="圖標" width="13" height="13" /><br /></td>
+                            <td width="263" valign="top" background=>
+                              <font color=990066>養成觀劇的習慣 ─ </font>
+                              自小養成看戲的習慣，即是替未來儲備戲劇人口。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="554" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr bgcolor="FAA55A">
+                    <td>
+                      <table width="143" border="0" cellspacing="2" cellpadding="2">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <font color=C32619 size=3>年齡與興趣：</font>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="FFE0A0" background="images/03/content/3-2/49.jpg" valign="top" align="right"
+                      height="237">
+                      <table width="555" border="0" cellspacing="2" cellpadding="5" height="237">
+                        <tbody>
+                          <tr>
+                            <td valign="top">
+                              <div align="right">
+                                <p>　　一般而言，依兒童身心發展的階段，兒童觀眾的年齡<br />
+                                  層可分為 4-6 歲、7-9 歲、10-12 歲以及 13-15 歲等四個階段。<br />
+                                  每一年齡層都有其適齡的故事內容、長度和處理手法。<br />
+                                  一齣好的兒童劇需考慮到觀眾的年齡層及各層級的身<br />
+                                  心發展和興趣。這是兒童劇最具挑戰性的一點。<br />
+                                  太低估或太高估兒童觀眾的領悟力，都容易使<br />
+                                  他們失去興趣，導致喧嘩或瞌睡。例如 4-9 歲<br />
+                                  的小朋友喜歡可愛的動物；10-12 歲的孩子喜歡<br />
+                                  英雄事蹟；13-15 歲的學生喜歡冒險和愛情故事。不<br />
+                                  過，有能力的劇團有時候會選擇跨年齡層的作法，使<br />
+                                  演出能有廣大的觀眾，有助經濟效益 。　　　　　　　<br />
+                                </p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="555" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td bgcolor="FBAA86">
+                      <table width="296" border="0" cellspacing="2" cellpadding="2">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <font color=C32619 size=3>表現形式：</font>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" background="images/03/content/3-2/50.jpg" height="139">
+                      <table width="300" border="0" cellspacing="2" cellpadding="5">
+                        <tbody>
+                          <tr>
+                            <td height="73" valign="top" background=>
+                              兒童的想像力豐富，只要略作暗示，他們便能接受。因此，設計不需過於寫實。過多的寫實佈景變化反而打斷了劇情的連貫性；逼真的大野狼，往往會嚇哭 4-6
+                              歲的小朋友；一棵由人扮演的老樹，在臺上隨時伸出援手，會獲得滿堂彩；在眾目睽睽之下，一陣濃煙，燈光一閃，青蛙變成王子，會引來聲聲讚美；幽默的對話和富暗示性的雙關語，會比肢體的逗趣更吸引國中的學生。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="555" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td valign="top" background=>
+                      <table width="555" border="0" cellspacing="0" cellpadding="0" height="187">
+                        <tbody>
+                          <tr>
+                            <td background="images/03/content/3-2/52.jpg" valign="top" height="197">
+                              <table width="178" border="0" cellspacing="2" cellpadding="2">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <font color=C32619 size=3>與觀眾互動：</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table width="286" border="0" cellspacing="2" cellpadding="2">
+                                <tbody>
+                                  <tr>
+                                    <td height="63" valign="top" background=>
+                                      這是兒童劇團常用的技巧。為的是讓觀眾更有參與感、更投入。使用時要設計好開始及結束互動的訊號，並練習純熟，以免造成不必要的喧鬧。低年級的小朋友參加互動的意願常比高年級的強，也比較主動。不過如果處理得不好，常會造成觀眾情緒失控的局面，甚至會使演出中斷，或破壞預期的效果。
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="554" border="0" cellspacing="0" cellpadding="0" height="205">
+                <tbody>
+                  <tr>
+                    <td>
+                      <table width="555" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr bgcolor="FBAA86">
+                            <td bgcolor="FBAA86">
+                              <table width="150" border="0" cellspacing="2" cellpadding="2" height="19">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <font color=C32619 size=3>欣賞力的培養：</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td background="images/03/content/3-2/53.jpg" valign="top" align="right" height="235">
+                              <table width="437" border="0" cellspacing="0" cellpadding="5" height="43">
+                                <tbody>
+                                  <tr>
+                                    <td valign="top" background=>
+                                      戲劇欣賞是需要學習的，因此正確欣賞方法的介紹與運用，也是很重要的。老師或家長可以做以下兩項活動，幫助兒童欣賞戲劇。</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table width="389" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td height="200" valign="top" background=>
+                                      <p><img src="images/03/content/icon.gif" alt="圖標" width="13" height="13"
+                                          hspace="3" align="texttop" />
+                                        <font color="990066">觀劇前活動 ─ </font> 收集有關劇團或要看的劇目的資料，將戲的故事及特色介紹給小朋友。<br />
+                                        <img src="images/03/content/icon.gif" alt="圖標" width="13" height="13" hspace="3"
+                                          align="texttop" />
+                                        <font color="990066">觀劇後活動 ─ </font>
+                                        以口頭問答、繪畫、或文字敘述的方式，複習劇情、人物特色、主題、重要訊息、語言、視覺效果、音樂等，看小朋友瞭解或吸收多少，做為瞭解孩子性向和智力發展的參考。
+                                      </p>
+                                      因為這兩項活動由老師做比較有系統，也比較專業，所以歐美國家特別重視利用上課時間，由教師帶學生去看戲。
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="555" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td valign="top">
+                      <table width="555" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td align="right" valign="top" background="images/03/content/3-2/55.jpg">
+                              <table width="379" border="0" cellspacing="2" cellpadding="2" height="29">
+                                <tbody>
+                                  <tr>
+                                    <td background=>
+                                      <font color=C32619 size=3>劇場：</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table width="379" border="0" cellspacing="3" cellpadding="5">
+                                <tbody>
+                                  <tr>
+                                    <td valign="top" background=>
+                                      有的劇種只適宜在小型劇場演出，如影戲和偶戲，因為戲偶很小，必須與觀眾的距離短，小朋友才會看得真切，互動也就較容易。即使在設備良好的鏡框式舞臺演出大型製作，觀眾席的縱深亦不宜過大，以免坐得遠的小朋友看不清楚而失去興趣。因此兒童劇比較適合在中、小型的劇場演出。
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            </div><!--content2頁面 結束-->
+
+            <!--content3頁面-->
+            <div class="content display-none" id="content3">
+              <div class="" style="background-color: #FFB468;">
+                <h2><strong>　劇場禮儀</strong></h2>
+
+              </div>
+
+              <table width="555" border="0" cellspacing="0" cellpadding="0" bgcolor="FBAA86">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div align="center">
+                        <table width="545" border="0" cellspacing="2" cellpadding="0" bgcolor="FBAA86">
+                          <tbody>
+                            <tr>
+                              <td width="541" valign="top">
+                                除了一些地方野臺戲外，大部分看戲都要購票入場，但也有不賣票而採贈票的方式，以便控制人數。姑且不論是贈票或是購票，去看戲都必須遵守下述禮儀：</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="554" border="0" cellspacing="0" cellpadding="2">
+                <tbody>
+                  <tr>
+                    <td bgcolor="#993300">
+                      <table width="552" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td width="22" valign="middle" align="center" bgcolor="FFEABA"><img
+                                src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
+                            <td width="530" bgcolor="FFEABA">一人一票，準時憑票入場。</td>
+                          </tr>
+                          <tr>
+                            <td width="22" valign="middle" align="center" bgcolor="FFD8AD"><img
+                                src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
+                            <td width="530" bgcolor="FFD8AD">對號入座。即使較好的位置沒有人坐，也不應該去佔用。</td>
+                          </tr>
+                          <tr>
+                            <td width="22" valign="middle" align="center" bgcolor="FFEABA"><img
+                                src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
+                            <td width="530" bgcolor="FFEABA">演出進行時，不可交談或任意更換座位，以免干擾其他人觀賞。</td>
+                          </tr>
+                          <tr>
+                            <td width="22" valign="middle" align="center" bgcolor="FFD8AD"><img
+                                src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
+                            <td width="530" bgcolor="FFD8AD">關閉所有會發出聲響的手機、call 機和鬧錶等，以免干擾演出。</td>
+                          </tr>
+                          <tr>
+                            <td width="22" valign="middle" align="center" bgcolor="FFEABA"><img
+                                src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
+                            <td width="530" bgcolor="FFEABA">勿在劇場內吃東西或喝飲料。</td>
+                          </tr>
+                          <tr>
+                            <td width="22" valign="middle" align="center" bgcolor="FFD8AD"><img
+                                src="images/03/content/icon2.gif" width="12" alt="圖標" height="12" /></td>
+                            <td width="530" bgcolor="FFD8AD">演出結束後，用掌聲表示你的讚賞。</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="555" border="0" cellspacing="2" cellpadding="0" height="194">
+                <tbody>
+                  <tr>
+                    <td background="images/03/content/3-3/56.jpg" valign="top">
+                      <div align="center">
+                        <table width="545" border="0" cellspacing="2" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td width="541" valign="top">此外，在離開劇場時，還要記得帶走自己的隨身物品，也不要將宣傳品隨便丟棄在座位上。</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div><!--content3頁面 結束-->
+
+            <!--content4頁面-->
+            <div class="content display-none" id="content4">
+              <div class="" style="background-color: #FFB468;">
+                <h2><strong>　好戲選段</strong></h2>
+              </div>
+              <div align="center">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center" valign="top" height="1441">
+                      <table width="505" cellspacing="3" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td valign="top">等了很久了吧？現在好戲正式開鑼囉！我們選了一些兒童戲劇經典作品的片段，現在就請你來點選想觀看的節目吧！</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="501" border="0" cellspacing="2" cellpadding="0" height="20">
+                        <tbody>
+                          <tr>
+                            <td><img src="images/03/content/3-4/middle5_3.gif" width="500" height="8" alt="好戲選段" /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="116">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="FF863B">
+                              <table width="300" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="images/03/content/3-4/dice-4.gif" width="12" height="12"
+                                        alt="Image" />
+                                      <font color=FFFFFF><strong>兒童戲曲 ─</strong>
+                                        <font color=FFFFCC>《森林七矮人》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFD752">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：國立臺灣戲曲專科學校國劇團（前國立復興劇團）</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="109">
+                                <tbody>
+                                  <tr>
+                                    <td width="117" align="center" valign="top" height="89"><a
+                                        href="https://youtu.be/AsXoEvfGou8" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="125" align="center" valign="top" height="89"><a href="03-4-1.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td width="115" valign="top" height="89">
+
+                                      <audio data-audio-id="1" class="myAudio">
+                                        <source src="images/03/content/3-4/01.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="1" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+
+
+                                    </td>
+                                    <td width="131" height="89"><img src="images/03/content/3-4/19.gif" width="127"
+                                        height="97" alt="好戲選段" /></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" valign="top"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="143">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="689900">
+                              <table width="300" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12"
+                                        alt="Image" />
+                                      <font color=FFFFFF><strong>偶戲 ─</strong>
+                                        <font color=FFFFCC>《奇幻仲夏夜之夢》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="CDC80A">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：一元布偶劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" height="119" align="center" valign="middle">
+                              <table width="489" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="142" align="center" height="107"><img src="images/03/content/3-4/23.gif"
+                                        width="127" height="97" alt="好戲選段" /></td>
+                                    <td width="107" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/amPAkOHnk6U" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="127" align="center" valign="top" height="107"><a href="03-4-2.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td width="112" valign="top" height="107"><audio data-audio-id="2" class="myAudio">
+                                        <source src="images/03/content/3-4/02.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="2" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="133">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="FF863B">
+                              <table width="300" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="images/03/content/3-4/dice-4.gif" width="12" height="12"
+                                        alt="Image" />
+                                      <font color=FFFFFF><strong>布袋戲 ─</strong>
+                                        <font color=FFFFCC>《武松打虎》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFD752">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：小西園掌中劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" height="113" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88"
+                                bgcolor="FFF8CB">
+                                <tbody>
+                                  <tr>
+                                    <td width="117" align="center" valign="top" height="98"><a
+                                        href="https://youtu.be/C2tFdsIFw88" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="122" align="center" valign="top" height="98" bgcolor="FFF8CB"><a
+                                        href="03-4-3.html" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td width="118" valign="top" height="98" bgcolor="FFF8CB"><audio data-audio-id="3"
+                                        class="myAudio">
+                                        <source src="images/03/content/3-4/03.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="3" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                    <td width="131" height="98"><img src="images/03/content/3-4/26.gif" width="127"
+                                        height="97" alt="好戲選段" /></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" height="4"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="117">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="689900">
+                              <table width="484" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12"
+                                        alt="Image" />
+                                      <font color=FFFFFF><strong>舞臺劇加黑光劇的效果 ─</strong>
+                                        <font color=FFFFCC>《滴滴噹噹歷險記》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="CDC80A">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：杯子劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="147" align="center" height="107"><img src="images/03/content/3-4/27.gif"
+                                        width="127" height="97" alt="好戲選段" /></td>
+                                    <td width="105" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/Eyg3yG5-5AE" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="121" align="center" valign="top" height="107"><a href="03-4-4.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td valign="top" height="107" width="115"><audio data-audio-id="4" class="myAudio">
+                                        <source src="images/03/content/3-4/04.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="4" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="109">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="FF863B">
+                              <table width="437" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td bordercolor="#FFFFCC"><img src="images/03/content/3-4/dice-4.gif" width="12"
+                                        height="12" alt="Image" />
+                                      <font color=FFFFFF><strong>舞臺劇加人偶的演出形式 ─</strong>
+                                        <font color=FFFFCC>《冒險金銀島》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFD752">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：九歌兒童劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="117" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/qhEqv_IytMw" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="125" align="center" valign="top" height="107"><a href="03-4-5.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td width="115" valign="top" height="107"><audio data-audio-id="5" class="myAudio">
+                                        <source src="images/03/content/3-4/05.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="5" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                    <td width="131" height="107"><img src="images/03/content/3-4/30.gif" width="127"
+                                        height="97" alt="好戲選段" /></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="139">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="689900">
+                              <table width="485" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12"
+                                        alt="Image" />
+                                      <font color=FFFFFF><strong>黑劇加桌上劇的演出形式 ─</strong>
+                                        <font color=FFFFCC>《漂浮的魔法桌》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="CDC80A">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：鞋子兒童劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="147" align="center" height="107"><img src="images/03/content/3-4/41.gif"
+                                        width="127" height="97" alt="好戲選段" /></td>
+                                    <td width="105" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/AvTcO1YF_3g" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="121" align="center" valign="top" height="107"><a href="03-4-6.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td valign="top" height="107" width="115"><audio data-audio-id="6" class="myAudio">
+                                        <source src="images/03/content/3-4/06.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="6" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="129">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="FF863B" height="10">
+                              <table width="437" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td bordercolor="#FFFFCC"><img src="images/03/content/3-4/dice-4.gif" width="12"
+                                        height="12" alt="Image" />
+                                      <font color=FFFFFF> <strong>較單純的音樂劇 ─</strong>
+                                        <font color=FFFFCC>《螃蟹與男孩》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFD752">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：牛古演劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="117" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/M-q-gKJSzN8" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="125" align="center" valign="top" height="107"><a href="03-4-7.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td width="115" valign="top" height="107"><audio data-audio-id="7" class="myAudio">
+                                        <source src="images/03/content/3-4/07.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="7" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                    <td width="131" height="107"><img src="images/03/content/3-4/49.gif" width="127"
+                                        height="97" alt="好戲選段" /></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="131">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="FF863B">
+                              <table width="437" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td bordercolor="#FFFFCC"><img src="images/03/content/3-4/dice-4.gif" width="12"
+                                        height="12" alt="Image" />
+                                      <font color=FFFFFF><strong>音樂劇演出形式 ─</strong>
+                                        <font color=FFFFCC>《貓捉老鼠》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFD752">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：紙風車劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="146" align="center" height="107"><img src="images/03/content/3-4/33.gif"
+                                        width="127" height="97" alt="好戲選段" /></td>
+                                    <td width="108" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/Ek9cUqqh0Ao" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="116" align="center" valign="top" height="107"><a href="03-4-8.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td width="118" valign="top" height="107"><audio data-audio-id="8" class="myAudio">
+                                        <source src="images/03/content/3-4/08.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="8" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB"> </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="506" border="0" cellspacing="0" cellpadding="0" bordercolor="#993366" height="108">
+                        <tbody>
+                          <tr>
+                            <td bgcolor="689900">
+                              <table width="485" border="0" cellspacing="2" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td><img src="images/03/content/3-4/dice-3.gif" width="12" height="12"
+                                        alt="Image" />
+                                      <font color=FFFFFF><strong>舞臺劇加音樂會的演出形式 ─</strong>
+                                        <font color=FFFFCC>《彼得與狼》</font>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="CDC80A">
+                              <table width="432" border="0" cellspacing="2" cellpadding="0" height="8">
+                                <tbody>
+                                  <tr>
+                                    <td height="2">　演出：魔奇兒童劇團</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="FFF8CB" align="center" valign="bottom">
+                              <table width="488" border="0" cellspacing="0" cellpadding="0" height="88">
+                                <tbody>
+                                  <tr>
+                                    <td width="121" align="center" valign="top" height="107"><a
+                                        href="https://youtu.be/UOovHndcId0" target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-1b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-1a.jpg';"
+                                          src="images/03/content/3-4/b-1a.jpg" alt="影片欣賞" /></a></td>
+                                    <td width="112" align="center" valign="top" height="107"><a href="03-4-9.html"
+                                        target="_blank" title="在新視窗打開連結"><img
+                                          onmouseover="this.src='images/03/content/3-4/b-2b.jpg';"
+                                          onmouseout="this.src='images/03/content/3-4/b-2a.jpg';"
+                                          src="images/03/content/3-4/b-2a.jpg" alt="劇情介紹" /></a></td>
+                                    <td valign="top" height="107" width="116"><audio data-audio-id="9" class="myAudio">
+                                        <source src="images/03/content/3-4/09.mp3" type="audio/mpeg"> Your browser does
+                                        not support the audio element.
+                                      </audio>
+                                      <img data-audio-id="9" class="sound_image" src="images/03/content/3-4/b-3a.jpg"
+                                        style="cursor: pointer;"
+                                        onmouseover="this.src='images/03/content/3-4/b-3b.jpg';"
+                                        onmouseout="this.src='images/03/content/3-4/b-3a.jpg';" alt="語音導覽">
+                                    </td>
+                                    <td height="107" width="139"><img src="images/03/content/3-4/42.gif" width="127"
+                                        height="97" alt="好戲選段" /></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table width="501" border="0" cellspacing="2" cellpadding="0" height="20">
+                        <tbody>
+                          <tr>
+                            <td><img src="images/03/content/3-4/middle5_3.gif" width="500" height="8" alt="Image" />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+
+            </div><!--content4頁面 結束-->
+
+          </div>
+          <div class="nav-section"
+            style="width: 614px; height: 82px; background-image: url('images/03/nav/enjoy_05.gif'); background-repeat: no-repeat;">
+          </div>
         </div>
+      </div>
     </div>
-    <script src="js/content.js"></script>
-    <script type="text/javascript">
-        window.onload=function(){
-            // 按照頁面需求更換
-            const mainSection = document.getElementById("main-section")
-            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
-        }
-    </script>
-    
+  </div>
+  <script src="js/content.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      // 按照頁面需求更換
+      const mainSection = document.getElementById("main-section")
+      mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+    }
+  </script>
+
 
 </body>
- <!-- 點擊產生聲音區 -->
+<!-- 點擊產生聲音區 -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const images = document.querySelectorAll('.sound_image');
-      
-      images.forEach(img => {
-          img.addEventListener('click', function() {
-              const audioId = this.getAttribute('data-audio-id');
-              const audioElement = document.querySelector(`audio[data-audio-id="${audioId}"]`);
+  document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('.sound_image');
 
-              // Pause any other playing audios
-              const allAudios = document.querySelectorAll('.myAudio');
-              allAudios.forEach(audio => {
-                  if (audio !== audioElement && !audio.paused) {
-                      audio.pause();
-                  }
-              });
+    images.forEach(img => {
+      img.addEventListener('click', function () {
+        const audioId = this.getAttribute('data-audio-id');
+        const audioElement = document.querySelector(`audio[data-audio-id="${audioId}"]`);
 
-              // Toggle play/pause for the clicked audio
-              if (audioElement.paused) {
-                  audioElement.play();
-              } else {
-                  audioElement.pause();
-              }
-          });
+        // Pause any other playing audios
+        const allAudios = document.querySelectorAll('.myAudio');
+        allAudios.forEach(audio => {
+          if (audio !== audioElement && !audio.paused) {
+            audio.pause();
+          }
+        });
+
+        // Toggle play/pause for the clicked audio
+        if (audioElement.paused) {
+          audioElement.play();
+        } else {
+          audioElement.pause();
+        }
       });
+    });
   });
-  window.onload=function(){
+  window.onload = function () {
     // 按照頁面需求更換
     const mainSection = document.getElementById("main-section")
     mainSection.style.backgroundImage = "url('" + mainBackground + "')";
@@ -884,27 +1268,27 @@
     let params = new URLSearchParams(window.location.search);
 
     if (params.has('content')) {
-        let content = params.get('content');
-        
-        switch (content) {
-            case '1':
-                showContent('content1');
-                break;
-            case '2':
-                showContent('content2');
-                break;
-            case '3':
-                showContent('content3');
-                break;
-            case '4':
-                showContent('content4');
-                break;
-            case '5':
-                showContent('content5');
-                break;
-            default:
-                showContent('content1');
-        }
+      let content = params.get('content');
+
+      switch (content) {
+        case '1':
+          showContent('content1');
+          break;
+        case '2':
+          showContent('content2');
+          break;
+        case '3':
+          showContent('content3');
+          break;
+        case '4':
+          showContent('content4');
+          break;
+        case '5':
+          showContent('content5');
+          break;
+        default:
+          showContent('content1');
+      }
     }
   }
 </script>

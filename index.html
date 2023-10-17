@@ -1,122 +1,106 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>戲劇欣賞系列-兒童劇</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>戲劇欣賞系列-兒童劇</title>
 
-    <script src="js/htmlinclude.js"></script>
-    <include src="partial/header.html"></include>
-    <link rel="stylesheet" href="css/introductory.css">
-    <link rel="stylesheet" href="css/image-switch-button.css">
-<script>
-        // 按照頁面需求更換
-        const thisPage = '00';
-        const thisSide = 'side_default';
+  <script src="js/htmlinclude.js"></script>
+  <include src="partial/header.html"></include>
+  <link rel="stylesheet" href="css/introductory.css">
+  <link rel="stylesheet" href="css/image-switch-button.css">
+  <script>
+    const thisPage = '00';
+    const thisSide = 'side_default';
 
-        const mainBackground = 'images/01_history/content/m_bg.jpg';
-        const navButtonGroupImage = 'images/01_history/top01_01.jpg';
-    </script>
-    <style>
-/*        .display-none {
-            display: none;
-        }
-        .content {
-            width: 569px;
-            margin-left: 52px;
-            margin-right: 63px;
-            margin-bottom: 10px;
-            /* border: 1px solid #aaa; 
-            background-color: transparent;
-            color: #363637;
-            font-size: smaller;
-        }
-        .content-title-image {
-            width: 100%;
-        }
-        .content-body {
-            display: flex;
-        }
-        .content-body p {
-            margin-left: 2px;
-        }
-        .content-body img {
-            width: 100%;
-        }*/
+    const mainBackground = 'images/01_history/content/m_bg.jpg';
+    const navButtonGroupImage = 'images/01_history/top01_01.jpg';
+  </script>
+  <style>
     body {
-	background-color: #FFF86F;
-}
+      background-color: #FFF86F;
+    }
 
+    .main {
+      background-image: url('images/index.jpg');
+      width: 1019px;
+      height: 600px;
+      position: relative;
+      background-size: cover;
+    }
 
-  .main {
-	background-image: url('images/index.jpg');
-	width: 1019px;
-	height: 600px;
-	position: relative;
-	background-size: cover;
-  }
-  .display-none {
-    display: none;
-  }
-  .link_image_group {
-	position: relative;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-  }
-  .link_image_group a {
-	position: absolute;
-	width: 395px;
-  }
-  #d1 {
-	background-image: url('images/index-btn1.png');
-	width: 130px;
-	height: 130px;
-	top: 237px;
-	left: 95px;
-	background-size: cover;
-  }
-  #d2 {
-	background-image: url('images/index-btn2.png');
-	width: 130px;
-	height: 130px;
-	top: 97px;
-	left: 177px;
-	background-size: cover;
-  }
-  #d3 {
-	background-image: url(images/index-btn3.png);
-	width: 130px;
-	height: 130px;
-	top: 16px;
-	left: 488px;
-	background-size: cover;
-	background-repeat: no-repeat;
-  }
-  #d4 {
-	background-image: url('images/index-btn4.png');
-	width: 130px;
-	height: 130px;
-	top: 101px;
-	left: 722px;
-	background-size: cover;
-  }
-  #d5 {
-	background-image: url('images/index-btn5.png');
-	width: 130px;
-	height: 130px;
-	top: 287px;
-	left: 766px;
-	background-size: cover;
-  }
-  #d6 {
-	background-image: url('images/index-btn6.png');
-	width: 130px;
-	height: 130px;
-	top: 412px;
-	left: 518px;
-	background-size: cover;
-  }
-/*  #d7 {
+    .display-none {
+      display: none;
+    }
+
+    .link_image_group {
+      position: relative;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    .link_image_group a {
+      position: absolute;
+      width: 395px;
+    }
+
+    #d1 {
+      background-image: url('images/index-btn1.png');
+      width: 130px;
+      height: 130px;
+      top: 237px;
+      left: 95px;
+      background-size: cover;
+    }
+
+    #d2 {
+      background-image: url('images/index-btn2.png');
+      width: 130px;
+      height: 130px;
+      top: 97px;
+      left: 177px;
+      background-size: cover;
+    }
+
+    #d3 {
+      background-image: url(images/index-btn3.png);
+      width: 130px;
+      height: 130px;
+      top: 16px;
+      left: 488px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #d4 {
+      background-image: url('images/index-btn4.png');
+      width: 130px;
+      height: 130px;
+      top: 101px;
+      left: 722px;
+      background-size: cover;
+    }
+
+    #d5 {
+      background-image: url('images/index-btn5.png');
+      width: 130px;
+      height: 130px;
+      top: 287px;
+      left: 766px;
+      background-size: cover;
+    }
+
+    #d6 {
+      background-image: url('images/index-btn6.png');
+      width: 130px;
+      height: 130px;
+      top: 412px;
+      left: 518px;
+      background-size: cover;
+    }
+
+    /*  #d7 {
 	background-image: url('images/index-btn7.png');
 	width: 130px;
 	height: 130px;
@@ -124,71 +108,38 @@
 	left: 531px;
 	background-size: cover;
   }*/
-  #d8 {
-	background-image: url('images/logo.jpg');
-	width: 274px;
-	height: 50px;
-	top: 9px;
-	left: 6px;
-	background-size: cover;
-  }
-
-  
-    </style>
+    #d8 {
+      background-image: url('images/logo.jpg');
+      width: 274px;
+      height: 50px;
+      top: 9px;
+      left: 6px;
+      background-size: cover;
+    }
+  </style>
 </head>
+
 <body>
-
-<div>
-<!--<img src="images/index.jpg" alt="" width="860">
-
-
-<div style="position:relative; left50px;top:-500px">
-<table width="90%" border="0" cellpadding="2">
-      <tr>
-        <th scope="col" valign="top" ><a href="https://www.arte.gov.tw/"><img src="images/logo.jpg" width="250" /></a></th>
-        <th scope="col"><a href="01.html"><img src="images/index-btn1.png" height="100" /></a></th>
-        <th scope="col"><a href="02.html"><img src="images/index-btn2.png" height="100" /></a></th>
-       <th scope="col"><a href="03.html"><img src="images/index-btn3.png" height="100" /></a></th>
-
-      </tr>
-    </table>
-
-</div>
-
-
-<div style="position:relative; left50px;top:-250px">
-<table width="90%" border="0" cellpadding="2">
-      <tr>
-        
-        <th scope="col" width="100px"></th>
-        <th scope="col"><a href="04.html"><img src="images/index-btn4.png" height="100" /></a></th>
-       <th scope="col"><a href="05.html"><img src="images/index-btn5.png" height="100" /></a></th>
-        <th scope="col"><a href="06.html"><img src="images/index-btn6.png" height="100" /></a></th>
-        <th scope="col"><a href="#"><img src="images/index-btn7.png" height="100" /></a></th>
-      </tr>
-    </table>
-
-</div>
--->
-</div>
-
-<div class="main">
-  <div class="link_image_group">
+  <h1 style="font-size: 0; margin: 0; padding: 0;">戲劇欣賞系列-兒童劇</h1>
+  <div class="main">
     <div class="link_image_group">
       <div class="link_image_group">
         <div class="link_image_group">
-        <a href="01.html" id="d1" style="font-size: 0;">戲劇簡介</a>
-        <a href="02.html" id="d2" style="font-size: 0;">認識劇場</a>
-        <a href="03.html" name="d3" id="d3" style="font-size: 0;">兒童戲劇簡介</a>
-        <a href="04.html" id="d4" style="font-size: 0;">兒童戲劇應用</a>
-        <a href="05.html" id="d5" style="font-size: 0;">資源教室</a>
-        <a href="06.html" id="d6" style="font-size: 0;">網站導覽</a>
-          <!--  <a href="07.html" id="d7"></a> -->
-          <a href="https://www.arte.gov.tw/" id="d8"  style="font-size: 0;">國立臺灣藝術教育館官網</a> </div>
+          <div class="link_image_group">
+            <a href="01.html" id="d1" style="font-size: 0;">戲劇簡介</a>
+            <a href="02.html" id="d2" style="font-size: 0;">認識劇場</a>
+            <a href="03.html" name="d3" id="d3" style="font-size: 0;">兒童戲劇簡介</a>
+            <a href="04.html" id="d4" style="font-size: 0;">兒童戲劇應用</a>
+            <a href="05.html" id="d5" style="font-size: 0;">資源教室</a>
+            <a href="06.html" id="d6" style="font-size: 0;">網站導覽</a>
+            <!--  <a href="07.html" id="d7"></a> -->
+            <a href="https://www.arte.gov.tw/" id="d8" style="font-size: 0;">國立臺灣藝術教育館官網</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  
+
 </body>
+
 </html>
