@@ -62,10 +62,15 @@
         }
     </style>
 </head>
+<noscript>
+    <div style="float: left; color: #f00;">
+        很抱歉，網站的某些功能在JavaScript沒有啟用的狀態下無法正常使用。
+    </div>
+</noscript>
 
 <body style="background-color: #ebb5e7;">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<a href="#gocontent" title="移到主要內容" target="_parent" class="sr-only sr-only-focusable">跳到主要內容</a>
+<a href="#gocontent" title="移到主要內容" class="sr-only sr-only-focusable">跳到主要內容</a>
 
     <h1 style="font-size: 10px; margin: 0; padding: 0;">戲劇欣賞系列-兒童劇-認識劇場</h1>
     <div class="container mx-auto container-section" id="container-section-image">
@@ -119,7 +124,7 @@
                                         height: 33px;
                                         background-image: url('images/02/content/2-1/button5a.gif');
                                         background-size: cover;
-                                        position: relative;
+                                        border: none;
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
@@ -129,12 +134,11 @@
                                     }
 
                                     .dropdown-content {
-                                        display: none;
+                                        /* display: none; */
                                         position: absolute;
 										top: 33px;
-                                        left: -50px;
+                                        left: 100px;
                                         width: 260px;
-                                        transform: translateX(-50%);
                                         z-index: 1;
                                         border: 1px solid #ccc;
                                         background-color: #f9f9f9;										
@@ -158,21 +162,31 @@
                                         display: block;
                                     }
 
-                                    .dropdown_button:hover .dropdown-content {
-                                        display: block;
-                                    }
-
                                     .dropdown-content a:hover {
                                         background-color: #ddd;
                                     }
                                 </style>
-                                <div class="dropdown_button">
-                                    <div class="dropdown-content">
-                                        <p>位於國立臺北藝術大學的露天劇場：</p>
-                                        <a href="https://youtu.be/ItNj-bjdbFA" title="戶外劇場" target=_blank style="background: #8dbbe9;">戶外劇場</a>
-                                        <a href="https://youtu.be/oboa1dUeSSg" title="荒山劇場" target=_blank style="background: #d6fefe;">荒山劇場</a>
-                                    </div>
+                                <button class="dropdown_button" id="dropdown_button">
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content01">
+                                    <p>位於國立臺北藝術大學的露天劇場：</p>
+                                    <a href="https://youtu.be/ItNj-bjdbFA" title="戶外劇場" target=_blank style="background: #8dbbe9;">戶外劇場</a>
+                                    <a href="https://youtu.be/oboa1dUeSSg" title="荒山劇場" target=_blank id="dropdown_content02" style="background: #d6fefe;">荒山劇場</a>
                                 </div>
+                                <script>
+                                    document.getElementById("dropdown_button").addEventListener('mouseover', function(){
+                                        document.getElementById("dropdown-content01").style.display = "block"
+                                    });
+                                    document.getElementById("dropdown_button").addEventListener('focus', function(){
+                                        document.getElementById("dropdown-content01").style.display = "block"
+                                    });
+                                    document.getElementById("dropdown-content01").addEventListener('mouseleave', function(){
+                                        document.getElementById("dropdown-content01").style.display = "none"
+                                    });
+                                    document.getElementById("dropdown_content02").addEventListener('focusout', function(){
+                                        document.getElementById("dropdown-content01").style.display = "none"
+                                    });
+                                </script>
                             </div>
                             
                        <div class="content_section" style="display: flex; background-color:#FFD1D1;">
@@ -263,7 +277,7 @@
                                         height: 33px;
                                         background-image: url('images/02/content/2-2/button6a.gif');
                                         background-size: cover;
-                                        position: relative;
+                                        border: none;
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
@@ -275,8 +289,8 @@
                                     .dropdown-content {
                                         display: none;
                                         position: absolute;
-                                        top: 33px;
-                                        left: -50px;
+                                        top: 140px;
+                                        left: 500px;
                                         width: 260px;
                                         transform: translateX(-50%);
                                         z-index: 1;
@@ -313,23 +327,37 @@
                                         background-color: #ddd;
                                     }
                                 </style>
-                                <div id="dropdown_button02">
-                                    <div class="dropdown-content">
-                                        <p>現在就請進入國立臺北藝術大學，參觀一下劇場吧！（請點選觀看影片）</p>
-                                        <p class="selector_section" style="background: #8dbbe9;">戲劇廳</p>
-                                        <a href="https://youtu.be/8FFPRauGCA0" title="戲劇廳環場" target=_blank style="background: #CCFFFF;">戲劇廳環場</a>
-                                        <a href="https://youtu.be/anarRJDhO6M" title="天幕" target=_blank style="background: #F3FFDB;">天幕</a>
-                                        <a href="https://youtu.be/fsASszHAHes" title="後臺區" target=_blank style="background: #CCFFFF;">後臺區</a>
-                                        <a href="https://youtu.be/1oTJI8JvX4k" title="上方鋼棚" target=_blank style="background: #F3FFDB;">上方鋼棚</a>
-                                        <a href="https://youtu.be/L_LdasmdUvQ" title="懸吊系統" target=_blank style="background: #CCFFFF;">懸吊系統</a>
-                                      <p class="selector_section" style="background: #8dbbe9;">舞蹈廳</p>
-                                        <a href="https://youtu.be/vKdAe0FUkEY" title="舞蹈廳環場" target=_blank style="background: #CCFFFF;">舞蹈廳環場</a>
-                                        <a href="https://youtu.be/xaahlNC-dDY" title="吊桿" target=_blank style="background: #F3FFDB;">吊桿</a>
-                                        <a href="https://youtu.be/SOGMaMysSI4" title="控制室" target=_blank style="background: #CCFFFF;">控制室</a>
-                                        <a href="https://youtu.be/yHv8eW0nPio" title="座位" target=_blank style="background: #F3FFDB;">座位</a>
-                                        <a href="https://youtu.be/IT98N27iZ-0" title="燈光系統" target=_blank style="background: #CCFFFF;">燈光系統</a>
-                                    </div>
+                                <button id="dropdown_button02">
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content02">
+                                    <p>現在就請進入國立臺北藝術大學，參觀一下劇場吧！（請點選觀看影片）</p>
+                                    <p class="selector_section" style="background: #8dbbe9;">戲劇廳</p>
+                                    <a href="https://youtu.be/8FFPRauGCA0" title="戲劇廳環場" target=_blank style="background: #CCFFFF;">戲劇廳環場</a>
+                                    <a href="https://youtu.be/anarRJDhO6M" title="天幕" target=_blank style="background: #F3FFDB;">天幕</a>
+                                    <a href="https://youtu.be/fsASszHAHes" title="後臺區" target=_blank style="background: #CCFFFF;">後臺區</a>
+                                    <a href="https://youtu.be/1oTJI8JvX4k" title="上方鋼棚" target=_blank style="background: #F3FFDB;">上方鋼棚</a>
+                                    <a href="https://youtu.be/L_LdasmdUvQ" title="懸吊系統" target=_blank style="background: #CCFFFF;">懸吊系統</a>
+                                  <p class="selector_section" style="background: #8dbbe9;">舞蹈廳</p>
+                                    <a href="https://youtu.be/vKdAe0FUkEY" title="舞蹈廳環場" target=_blank style="background: #CCFFFF;">舞蹈廳環場</a>
+                                    <a href="https://youtu.be/xaahlNC-dDY" title="吊桿" target=_blank style="background: #F3FFDB;">吊桿</a>
+                                    <a href="https://youtu.be/SOGMaMysSI4" title="控制室" target=_blank style="background: #CCFFFF;">控制室</a>
+                                    <a href="https://youtu.be/yHv8eW0nPio" title="座位" target=_blank style="background: #F3FFDB;">座位</a>
+                                    <a href="https://youtu.be/IT98N27iZ-0" title="燈光系統" target=_blank style="background: #CCFFFF;" id="dropdown_content_a_02">燈光系統</a>
                                 </div>
+                                <script>
+                                    document.getElementById("dropdown_button02").addEventListener('mouseover', function(){
+                                        document.getElementById("dropdown-content02").style.display = "block"
+                                    });
+                                    document.getElementById("dropdown_button02").addEventListener('focus', function(){
+                                        document.getElementById("dropdown-content02").style.display = "block"
+                                    });
+                                    document.getElementById("dropdown-content02").addEventListener('mouseleave', function(){
+                                        document.getElementById("dropdown-content02").style.display = "none"
+                                    });
+                                    document.getElementById("dropdown_content_a_02").addEventListener('focusout', function(){
+                                        document.getElementById("dropdown-content02").style.display = "none"
+                                    });
+                                </script>
                             </div>
                             
                              <!--<p style="width:300px; margin-left:45%" align="right">劇場參觀->要做下選單連影片</p>-->

@@ -62,10 +62,15 @@
         }
     </style>
 </head>
+<noscript>
+    <div style="float: left; color: #f00;">
+        很抱歉，網站的某些功能在JavaScript沒有啟用的狀態下無法正常使用。
+    </div>
+</noscript>
 
 <body style="background-color: #ffff65;">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<a href="#main-section" title="移到主要內容" target="_parent" class="sr-only sr-only-focusable">跳到主要內容</a>
+<a href="#main-section" title="移到主要內容" class="sr-only sr-only-focusable">跳到主要內容</a>
 
    <h1 style="font-size:10px; margin: 0; padding: 0;">戲劇欣賞系列-兒童劇-網站導覽</h1>
     <div class="container mx-auto container-section" id="container-section-image">
@@ -118,6 +123,8 @@
                                 .chapter_link {
                                     width: 90px;
                                     height: 90px;
+                                    background-color: transparent;
+                                    border: none;
                                     position: absolute;
                                     left: 24px;
                                     top: 90px;
@@ -166,38 +173,38 @@
                                 #chapter_link05:hover #section_lin05 {display: block;}
                             </style>
                              <div class="content_main">
-                                <div class="chapter_link" id="chapter_link01">
+                                <button class="chapter_link" id="chapter_link01">
                                     <div class="section_links" id="section_lin01">
-                                        <a href="01.html?content=1" title="定義">定義</a>
+                                        <a href="01.html?content=1" tabindex="1" title="定義">定義</a>
                                         <a href="01.html?content=2" title="源起">源起</a>
                                         <a href="01.html?content=3" title="發展">發展</a>
                                         <a href="01.html?content=4" title="類型">類型</a>
                                         <a href="01.html?content=5" title="要素">要素</a>
                                     </div>
-                                </div>
-                                <div class="chapter_link" id="chapter_link02">
+                                </button>
+                                <button class="chapter_link" id="chapter_link02">
                                     <div class="section_links" id="section_lin02">
                                         <a href="02.html?content=1" title="劇場形式">劇場形式</a>
                                         <a href="02.html?content=2" title="劇場設備">劇場設備</a>
                                         <a href="02.html?content=3" title="工作分配">工作分配</a>
                                     </div>
-                                </div>
-                                <div class="chapter_link" id="chapter_link03">
+                                </button>
+                                <button class="chapter_link" id="chapter_link03">
                                     <div class="section_links" id="section_lin03">
                                         <a href="03.html?content=1" title="概說">概說</a>
                                         <a href="03.html?content=2" title="兒童劇">兒童劇</a>
                                         <a href="03.html?content=3" title="劇場禮儀">劇場禮儀</a>
                                         <a href="03.html?content=4" title="好戲選段">好戲選段</a>
                                     </div>
-                                </div>
-                                <div class="chapter_link" id="chapter_link04">
+                                </button>
+                                <button class="chapter_link" id="chapter_link04">
                                     <div class="section_links" id="section_lin04">
                                         <a href="04.html?content=1" title="創造性戲劇">創造性戲劇</a>
                                         <a href="04.html?content=2" title="基本練習">基本練習</a>
                                         <a href="04.html?content=3" title="教材教法">教材教法</a>
                                     </div>
-                                </div>
-                                <div class="chapter_link" id="chapter_link05">
+                                </button>
+                                <button class="chapter_link" id="chapter_link05">
                                     <div class="section_links" id="section_lin05">
                                         <a href="05.html?content=1" title="演出資訊">演出資訊</a>
                                         <a href="05.html?content=2" title="購票方式">購票方式</a>
@@ -205,7 +212,7 @@
                                         <a href="05.html?content=4" title="網站連結">網站連結</a>
                                         <a href="05.html?content=5" title="參考文獻">參考文獻</a>
                                     </div>
-                                </div>
+                                </button>
                                 <a href="" class="chapter_link" id="chapter_link07"></a>
                                 <a href="06-2.htm" target="_blank"  title="資料提供單位（在新視窗打開連結）"  class="chapter_link" id="chapter_link09" style="font-size: 0;">資料提供單位</a>
                              </div>
