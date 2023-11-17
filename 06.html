@@ -131,7 +131,8 @@
                                     cursor: pointer;
                                 }
                                 .section_links {
-                                    display: block;
+                                    position: absolute;
+                                    display: none;
                                     width: max-content;
                                     background: #f9da4a;
 									border-radius:5px; 
@@ -139,8 +140,7 @@
 									padding-right: 5px;
 									padding-top: 5px;
 									padding-bottom: 5px;
-                                    margin-left: 90px;
-                                    display: none;
+                                    margin-left: 5px;
                                 }
                                 .section_links a {
                                     display: block;
@@ -166,53 +166,58 @@
                                 #chapter_link08 {left: 400px; top: 181px;}
                                 #chapter_link09 {left: 410px; top: 8px; width: 90px; height: 70px;}
 
-                                #chapter_link01:hover #section_lin01 {display: block;}
-                                #chapter_link02:hover #section_lin02 {display: block;}
-                                #chapter_link03:hover #section_lin03 {display: block;}
-                                #chapter_link04:hover #section_lin04 {display: block;}
-                                #chapter_link05:hover #section_lin05 {display: block;}
+                                #section_link01 {left: 104px; top: 90px;}
+                                #section_link02 {left: 226px; top: 90px;}
+                                #section_link03 {left: 336px; top: 90px;}
+                                #section_link04 {left: 470px; top: 90px;}
+                                #section_link05 {left: 106px; top: 181px;}
                             </style>
                              <div class="content_main">
-                                <button class="chapter_link" id="chapter_link01">
-                                    <div class="section_links" id="section_lin01">
-                                        <a href="01.html?content=1" tabindex="1" title="定義">定義</a>
-                                        <a href="01.html?content=2" title="源起">源起</a>
-                                        <a href="01.html?content=3" title="發展">發展</a>
-                                        <a href="01.html?content=4" title="類型">類型</a>
-                                        <a href="01.html?content=5" title="要素">要素</a>
-                                    </div>
+                                <button class="chapter_link link_with_menu" id="chapter_link01">
                                 </button>
-                                <button class="chapter_link" id="chapter_link02">
-                                    <div class="section_links" id="section_lin02">
-                                        <a href="02.html?content=1" title="劇場形式">劇場形式</a>
-                                        <a href="02.html?content=2" title="劇場設備">劇場設備</a>
-                                        <a href="02.html?content=3" title="工作分配">工作分配</a>
-                                    </div>
+                                <div class="section_links section_wuth_menu" id="section_link01">
+                                    <a href="01.html?content=1" title="定義">定義</a>
+                                    <a href="01.html?content=2" title="源起">源起</a>
+                                    <a href="01.html?content=3" title="發展">發展</a>
+                                    <a href="01.html?content=4" title="類型">類型</a>
+                                    <a href="01.html?content=5" id="section_lin01_last" title="要素">要素</a>
+                                </div>
+                                
+                                <button class="chapter_link link_with_menu" id="chapter_link02">
                                 </button>
-                                <button class="chapter_link" id="chapter_link03">
-                                    <div class="section_links" id="section_lin03">
-                                        <a href="03.html?content=1" title="概說">概說</a>
-                                        <a href="03.html?content=2" title="兒童劇">兒童劇</a>
-                                        <a href="03.html?content=3" title="劇場禮儀">劇場禮儀</a>
-                                        <a href="03.html?content=4" title="好戲選段">好戲選段</a>
-                                    </div>
+                                <div class="section_links section_wuth_menu" id="section_link02">
+                                    <a href="02.html?content=1" title="劇場形式">劇場形式</a>
+                                    <a href="02.html?content=2" title="劇場設備">劇場設備</a>
+                                    <a href="02.html?content=3" title="工作分配">工作分配</a>
+                                </div>
+
+                                <button class="chapter_link link_with_menu" id="chapter_link03">
                                 </button>
-                                <button class="chapter_link" id="chapter_link04">
-                                    <div class="section_links" id="section_lin04">
-                                        <a href="04.html?content=1" title="創造性戲劇">創造性戲劇</a>
-                                        <a href="04.html?content=2" title="基本練習">基本練習</a>
-                                        <a href="04.html?content=3" title="教材教法">教材教法</a>
-                                    </div>
+                                <div class="section_links section_wuth_menu" id="section_link03">
+                                    <a href="03.html?content=1" title="概說">概說</a>
+                                    <a href="03.html?content=2" title="兒童劇">兒童劇</a>
+                                    <a href="03.html?content=3" title="劇場禮儀">劇場禮儀</a>
+                                    <a href="03.html?content=4" title="好戲選段">好戲選段</a>
+                                </div>
+
+                                <button class="chapter_link link_with_menu" id="chapter_link04">
                                 </button>
-                                <button class="chapter_link" id="chapter_link05">
-                                    <div class="section_links" id="section_lin05">
-                                        <a href="05.html?content=1" title="演出資訊">演出資訊</a>
-                                        <a href="05.html?content=2" title="購票方式">購票方式</a>
-                                        <a href="05.html?content=3" title="演出場地">演出場地</a>
-                                        <a href="05.html?content=4" title="網站連結">網站連結</a>
-                                        <a href="05.html?content=5" title="參考文獻">參考文獻</a>
-                                    </div>
+                                <div class="section_links section_wuth_menu" id="section_link04">
+                                    <a href="04.html?content=1" title="創造性戲劇">創造性戲劇</a>
+                                    <a href="04.html?content=2" title="基本練習">基本練習</a>
+                                    <a href="04.html?content=3" title="教材教法">教材教法</a>
+                                </div>
+
+                                <button class="chapter_link link_with_menu" id="chapter_link05">
                                 </button>
+                                <div class="section_links section_wuth_menu" id="section_link05">
+                                    <a href="05.html?content=1" title="演出資訊">演出資訊</a>
+                                    <a href="05.html?content=2" title="購票方式">購票方式</a>
+                                    <a href="05.html?content=3" title="演出場地">演出場地</a>
+                                    <a href="05.html?content=4" title="網站連結">網站連結</a>
+                                    <a href="05.html?content=5" title="參考文獻">參考文獻</a>
+                                </div>
+
                                 <a href="" class="chapter_link" id="chapter_link07" title="網站導覽"></a>
                                 <a href="06-2.htm" target="_blank"  title="資料提供單位（在新視窗打開連結）"  class="chapter_link" id="chapter_link09" style="font-size: 0;">資料提供單位</a>
                              </div>
@@ -230,6 +235,27 @@
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".link_with_menu");
+            const lists = document.querySelectorAll(".section_wuth_menu");
+
+            console.log(buttons)
+            console.log(lists)
+
+            buttons.forEach((button, index) => {
+                button.addEventListener("mouseover", () => {
+                    lists.forEach(lists => lists.style.display = "none");
+                    lists[index].style.display = "block";
+                });
+                button.addEventListener("focus", () => {
+                    lists.forEach(lists => lists.style.display = "none");
+                    lists[index].style.display = "block";
+                });
+            });
+            document.addEventListener("mousedown", function(event) {
+                lists.forEach(lists => lists.style.display = "none");
+            });
+        });
     </script>
 </body>
 </html>
